@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Andrielle Hillis' Portfolio</title>
+      <!--Adding a comment-->
+      <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet"> 
+      <style>
+        body, nav ul, footer, .project h3{
+    margin: 0;
+    padding: 0;
+            background-color: #3F7883;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
+        }
+        header, nav {
+            font-family: 'Yellowtail', cursive;
+        }
+        nav ul {            
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        nav ul, #contact{          
+            list-style-type: none;
+        }
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;            
+            padding: 14px 16px;
+        }
+        nav li a, header{            
+            text-align: center;
+        }
+        nav li a, #contact, header{
+            color: #f8f8f8;
+            text-decoration: none;
+        }
+        nav li a:hover:not(.active){
+            background-color: #013A45;
+        }
+        header{
+            background: url("spots.jpg");
+            font-size: 1.5em;
+            margin-top: 25px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        section{           
+            padding: 20px auto 20px auto;
+            color: #013A45;
+            background-color: #f8f8f8;
+        }
+        section h2{            
+            font-size: 1.75em;
+        }
+        article{
+            width: 80%;
+            margin: 0 auto 0 auto;
+            padding: 10px;
+        }
+         #projects{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project{
+            width: 180px;
+            height: 125px;   
+            margin: 15px;            
+            text-align: center;
+            border: 4px  solid #3F7883;
+            transition: background-color 0.5s;
+        }
+        .project, .project img{
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        .project:hover{
+            background-color: #E3E3E3;
+        }
+        .project h3{
+            color: #fffeef;
+            margin-top: 0;
+        }
+        #tribute{
+            width: 70px;
+            vertical-align: center;
+        }
+        footer{
+            padding: 15px;
+        }
+        footer img{
+            width: 50px;
+            height: 50px;
+        }
+        #contact{
+            float: left;
+        }
+        #weblinks{
+            float: right;
+        }
+        #weblinks li{
+            display: inline;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            footer img{
+                width: 25px;
+                height: 25px;
+            }
+            .project{
+                width: 90px;
+                height: 62.5px;
+            }
+            #contact, #weblinks{
+                float: none;
+                margin: 5px auto 5px auto;
+                text-align: center;
+            }
+            h3, nav li{
+                font-size: 0.8em;
+            }
+        }
+      </style>
+    </head>
+    <body>
+        <nav>
+		    <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+	      </nav>
+	    <header>
+	      <hgroup id="home">
+		    <h1>Andrielle Hillis</h1>
+		    <h2>Front-End Developer</h2>
+	      </hgroup>     
+
+	    </header>
+	    <section>
+            <article>
+                <h2 id="about">About Me</h2>
+                <p>I attended the University of North Texas and graduated with a Bachelor of Arts degree (German major, Spanish minor), and about all it landed me was a cashiering job at Target. Not very exciting. So, I started to code and develop web pages for about a year now. I know HTML/CSS, Processing JS, some Python, and a little bit of C#. It would be nice to actually be able to earn some money doing it one day, but for now, it is just a hobby.</p>
+            
+                <p>I currently live in norteast Texas with my husband and three children. I also work at the Target in Texarkana, and in my spare time, I like to cook and program.</p>
+            
+                <h3>How I got into Programming</h3>
+            
+                <p>Oh, yeah, I forgot to mention that I'm actually studying to be a teacher.  I wanted to be a math teacher, since I was rather good at it in school.  But I learned really quickly that I had forgotten <em>a lot</em> of what I learned in school. Well, I was telling a teacher of my plight, and they recommended Khan Academy. So, one day, I decided to try their <a href="https://www.khanacademy.org/hourofcode" target="_new">Hour of Code</a>.  From then on, I was hooked on coding!</p>
+            </article>    
+            <article id="projects">
+                <h2>Projects</h2>
+                <a href="http://codepen.io/arhillis/pen/RaaybB" class="project" target="_new">
+                    <h3>Tribute Page</h3>
+                    <img src="https://sp.yimg.com/ib/th?id=OIP.Mc36f0525f364672d77915022a80c2c9eo0&pid=15.1&rs=1&c=1&qlt=95&w=84&h=111#inline" alt="protrait of King George VI" id="tribute"/>
+                </a>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+                <div class="project">
+                    <h3>Project</h3>
+                </div>
+            </article>          
+	    </section>
+	    <footer>
+	    <div>
+		    <ul id="contact">
+				    <li>andriellerhillis@gmail.com</li>
+				    <li>(817)320-7636</li>
+		    </ul>			
+			    <ul id="weblinks">		
+			      <li id="linkedIn">
+				    <a href="https://www.linkedin.com/in/andrielle-hillis-50a27b30" target="_new">
+				    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo"></a></li>
+			      <li id="google+">
+				    <a href="https://plus.google.com/u/0/109043758950904996114" target="_new">
+				    <img src="https://sp.yimg.com/xj/th?id=OIP.Mb91492d125dc2d96c51e8b6bf968052bo0&pid=15.1&P=0&w=178&h=176" alt="Google Logo"></a></li>
+			      <li id="github">
+				    <a href="https://github.com/arhillis" target="_new">
+				    <img src="https://tse3.mm.bing.net/th?id=OIP.M769b2f2929515498d08cce4f5941960co0&pid=15.1&P=0&w=300&h=300" alt="GitHub Logo"></a></li>
+			      <li id="khanAcad">
+				    <a href="https://www.khanacademy.org/profile/arhillis/" target="_new">
+				    <img src="https://tse4.mm.bing.net/th?id=OIP.M79c0713f59b66efe4ef720ec41fbdee2H0&pid=15.1&P=0&w=212&h=182" alt="Khan Academy Logo"></a></li>
+			      <li id="codePen">
+				    <a href="http://codepen.io/arhillis/#" target="_new">
+				    <img src="https://tse4.mm.bing.net/th?id=OIP.Mc54fa0081ad50c5388173879e9f9e4f1o0&pid=15.1&P=0&w=300&h=300" alt="CodePen Logo"></a></li> 	
+			    </ul>
+	    </div>	
+	    </footer>
+    </body>
+</html>
