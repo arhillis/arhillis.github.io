@@ -1,9 +1,17 @@
+
+/*Rules that apply to multiple elements on the page*/
 body, nav ul, footer, .project h3{
     background-color: #3F7883;
     margin: 0;
     padding: 0;
 }
-
+ nav li a, header{            
+    text-align: center;
+}
+        nav li a, #contact, header{
+            color: #f8f8f8;
+            text-decoration: none;
+        }
 
 /*------------NAVIGTION----------*/
 nav ul {   
@@ -22,13 +30,7 @@ nav li a {
     display: block;            
     padding: 14px 16px;
 }
-        nav li a, header{            
-            text-align: center;
-        }
-        nav li a, #contact, header{
-            color: #f8f8f8;
-            text-decoration: none;
-        }
+       
         nav li a:hover:not(.active){
             background-color: #013A45;
         }
