@@ -1,3 +1,4 @@
+
 /*Rules that apply to multiple elements on the page*/
 body, nav ul, footer, .project h3{
     background-color: #3F7883;
@@ -130,4 +131,4 @@ footer{
             h3, nav li{
                 font-size: 0.8em;
     }
-}
+ }
