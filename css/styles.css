@@ -57,6 +57,7 @@ h2{
         }
         main h2{            
             font-size: 1.75em;
+            padding-top: 0.75em;
         }
         article{
             width: 80%;
