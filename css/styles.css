@@ -12,6 +12,9 @@ nav li a, #contact, header{
     text-decoration: none;
 }
 
+h1, h2, nav li, h3{
+    font-family: 'Yellowtail', cursive;
+}
 /*------------NAVIGTION----------*/
 nav ul {   
     overflow: hidden;
