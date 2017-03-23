@@ -15,7 +15,6 @@ header {
 }
 
 nav li a,
-#contact,
 header {
   color: #f8f8f8;
   text-decoration: none;
@@ -132,7 +131,7 @@ a:link {
 
 #tribute {
   width: 70px;
-  vertical-align: center;
+  margin-top: 3px;
 }
 
 
@@ -142,13 +141,9 @@ footer {
   padding: 10px;
 }
 
-footer img {
+#weblinks img {
   width: 50px;
   height: 50px;
-}
-
-#contact {
-  float: left;
 }
 
 #weblinks {
