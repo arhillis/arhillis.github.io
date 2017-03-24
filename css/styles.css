@@ -158,7 +158,7 @@ footer {
 /*---------MEDIA QUERRIES------------------*/
 
 @media only screen and (max-width: 600px) {
-  footer img {
+  #weblinks img {
     width: 25px;
     height: 25px;
   }
