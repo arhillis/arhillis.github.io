@@ -25,14 +25,17 @@ header {
   font-family: 'Yellowtail', cursive;
 }
 
-
+nav ul,
+h2,
+.blank{
+  width: 100%;
+}
 /*------------NAVIGTION----------*/
 
 nav ul {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
 nav ul,
@@ -66,7 +69,6 @@ header {
 
 h2 {
   text-align: center;
-  width: 100%;
 }
 
 
@@ -134,6 +136,9 @@ a:link {
   margin-top: 3px;
 }
 
+#summary{
+  text-align: left;
+}
 
 /*----------- FOOTER -----------*/
 
