@@ -2,8 +2,8 @@
 
 body,
 nav ul,
-footer,
-.project h3 {
+.project h3,
+button {
   background-color: #3F7883;
   margin: 0;
   padding: 0;
@@ -15,7 +15,8 @@ header {
 }
 
 nav li a,
-header {
+header,
+button {
   color: #f8f8f8;
   text-decoration: none;
 }
@@ -30,16 +31,28 @@ h2,
 .blank{
   width: 100%;
 }
+
+nav ul,
+#contact{  
+  overflow: hidden;
+}
+
+.project,
+.project img,
+footer img,
+textarea, 
+button {
+  border-radius: 4px;
+  margin-top: 5px;
+}
 /*------------NAVIGTION----------*/
 
 nav ul {
-  overflow: hidden;
   position: fixed;
   top: 0;
 }
 
-nav ul,
-#contact {
+nav ul{
   list-style-type: none;
 }
 
@@ -110,13 +123,6 @@ article {
   box-shadow: 3px 3px 5px #013A45;
 }
 
-.project,
-.project img,
-footer img {
-  border-radius: 4px;
-  margin-top: 5px;
-}
-
 a:link {
   text-decoration: none;
 }
@@ -140,22 +146,22 @@ a:link {
   text-align: left;
 }
 
-#contact{
-  border: 2px solid red;
-  overflow: hidden;
-}
-
-#info, textarea{
-  width: 50%;
+#info, #message{
+  width: 40%;
+  margin: 4%;
 }
 
 #info{
   float: left;
 }
-textarea{
+#message{
   float: right;
-  width: 250px;
   height: 500px;
+}
+
+#message textarea{
+  width: 100%;
+  height: 15em;
 }
 
 /*----------- FOOTER -----------*/
