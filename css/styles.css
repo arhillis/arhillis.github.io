@@ -10,14 +10,23 @@ button {
 }
 
 nav li a,
-header {
+header,
+h2 {
   text-align: center;
 }
 
 nav li a,
 header,
-button {
+button,
+.project h3{
   color: #f8f8f8;
+}
+
+nav li a,
+header,
+button,
+.project h3,
+a:any-link{  
   text-decoration: none;
 }
 
@@ -65,7 +74,8 @@ nav li a {
   padding: 14px 16px;
 }
 
-nav li a:hover:not(.active) {
+nav li a:hover:not(.active),
+button {
   background-color: #013A45;
 }
 
@@ -79,11 +89,6 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
-h2 {
-  text-align: center;
-}
-
 
 /*----------SECTIONS AND ARTICLES ------------*/
 
@@ -123,27 +128,18 @@ article {
   box-shadow: 3px 3px 5px #013A45;
 }
 
-a:link {
-  text-decoration: none;
-}
-
 .project:hover {
   background-color: #E3E3E3;
   box-shadow: 3px 3px 10px #013A45;
 }
 
 .project h3 {
-  color: #fffeef;
   margin-top: 0;
 }
 
 #tribute img{
   width: 70px;
   margin-top: 3px;
-}
-
-#summary{
-  text-align: left;
 }
 
 #info, #message{
