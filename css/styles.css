@@ -140,6 +140,24 @@ a:link {
   text-align: left;
 }
 
+#contact{
+  border: 2px solid red;
+  overflow: hidden;
+}
+
+#info, textarea{
+  width: 50%;
+}
+
+#info{
+  float: left;
+}
+textarea{
+  float: right;
+  width: 250px;
+  height: 500px;
+}
+
 /*----------- FOOTER -----------*/
 
 footer {
