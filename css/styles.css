@@ -39,7 +39,7 @@ a:any-link{
 
 nav ul,
 h2,
-.blank,
+#summary,
 #message textarea{
   width: 100%;
 }
@@ -52,11 +52,20 @@ nav ul,
 .project,
 .project img,
 #weblinks img,
-textarea, 
-button, 
-input {
+textarea,
+input,
+button{
   border-radius: 4px;
-  margin-top: 5px;
+}
+
+#message,
+#weblinks{
+  float: right;
+}
+
+.project h3,
+#weblinks {
+  margin-top: 0;
 }
 
 main,
@@ -64,6 +73,7 @@ button:hover{
   color: #013A45;
   background-color: #f8f8f8;
 }
+
 /*------------NAVIGTION----------*/
 
 nav ul {
@@ -89,10 +99,7 @@ button {
   background-color: #013A45;
 }
 
-#message,
-#weblinks{
-  float: right;
-}
+
 /*---------HEADER----------------*/
 
 header {
@@ -143,10 +150,6 @@ article {
   box-shadow: 3px 3px 10px #013A45;
 }
 
-.project h3 {
-  margin-top: 0;
-}
-
 #tribute img{
   width: 70px;
   margin-top: 3px;
@@ -161,6 +164,7 @@ article {
 
 #info{
   float: left;
+  margin-left: 0;
 }
 #message{
   height: 500px;
@@ -195,10 +199,7 @@ footer {
   h2{
     font-size: 1.25em;
   }
-  #weblinks img {
-    width: 25px;
-    height: 25px;
-  }
+
   .project {
     width: 75px;
     height: 90px;
@@ -208,7 +209,6 @@ footer {
   }
  
   #weblinks {
-    float: none;
     margin: 5px auto 5px auto;
   }
 
@@ -219,4 +219,10 @@ footer {
   nav li {
     font-size: 0.8em;
   }
+
+  #info,
+  #message{
+    width: 100%;
+  }
+  
 }
