@@ -179,14 +179,19 @@ article {
 footer {
   padding: 10px;
 }
-
+#weblinks{  
+  width: 50%;
+  display: flex;
+  padding-top: 7.5px;
+}
 #weblinks img {
   width: 25px;
   height: 25px;
 }
 
 #weblinks li {
-  display: inline;
+  width: 15%;
+  list-style-type: none;
 }
 
 
@@ -209,9 +214,13 @@ footer {
   }
  
   #weblinks {
-    margin: 5px auto 5px auto;
+    width: 100%;
   }
 
+  #weblinks li{
+    width: 40%;
+    padding: 5px;
+  }
   #tribute img{
     width: 45px;
   }
