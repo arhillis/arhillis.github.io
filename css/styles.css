@@ -33,8 +33,7 @@ a:any-link{
   text-decoration: none;
 }
 
-.fancyfont,
-.project h3 {
+.fancyfont{
   font-family: 'Yellowtail', cursive;
 }
 
