@@ -63,8 +63,7 @@ button{
   float: right;
 }
 
-.project h3,
-#weblinks {
+.project h3{
   margin-top: 0;
 }
 
@@ -72,6 +71,13 @@ main,
 button:hover{  
   color: #013A45;
   background-color: #f8f8f8;
+}
+
+#projects, 
+#weblinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*------------NAVIGTION----------*/
@@ -129,11 +135,6 @@ article {
 
 /*--------------PROJECTS-------------------*/
 
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .project {
   width: 180px;
@@ -181,22 +182,36 @@ footer {
   padding: 10px;
   height: 50px;
 }
-#weblinks{  
-  width: 50%;
-  display: flex;
-  padding-top: 7.5px;
-}
-#weblinks img {
-  width: 25px;
-  height: 25px;
-}
-
-#weblinks li {
-  width: 15%;
-  list-style-type: none;
-}
-
-
+#weblinks{
+            margin-top: -2.5px;
+            width: 50%;
+        }
+        #weblinks li{
+            list-style-type: none;
+        }
+        .btn{
+            position: relative;
+            height: 25px;
+            width: 25px;
+            margin: 5px;
+        }
+        .glyph{
+            position: absolute;
+            width: 25px;
+            border-radius: 4px;
+        }
+        .default{
+            visibility: visible;
+        }
+        .hover{
+            visibility: hidden;
+        }
+        .btn:hover .default{
+            visibility: hidden;
+        }
+        .btn:hover .hover{
+            visibility: visible;
+        }
 /*---------MEDIA QUERRIES------------------*/
 
 @media only screen and (max-width: 600px) {
