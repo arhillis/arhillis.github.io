@@ -150,10 +150,14 @@ article {
   box-shadow: 3px 3px 10px #013A45;
 }
 
-#tribute img{
-  width: 70px;
+.project img{  
   margin-top: 3px;
 }
+
+#tribute img{
+  width: 70px;
+}
+
 
 /*--------- CONTACT SECTION -----------*/
 
