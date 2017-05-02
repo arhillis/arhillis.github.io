@@ -243,7 +243,11 @@ footer {
     padding: 5px;
   }
   #tribute img{
-    width: 45px;
+    width: 40px;
+  }
+  #quotes img{
+    width: 55px;
+    margin-top: 10px;
   }
   h3,
   nav li {
