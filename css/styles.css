@@ -218,6 +218,14 @@ footer {
         }
 /*---------MEDIA QUERRIES------------------*/
 
+@media screen and (max-width: 950px){
+  #weblinks{
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   h1{
     font-size: 1.25em;
@@ -232,10 +240,6 @@ footer {
   }
   #summary{
     display: none;
-  }
- 
-  #weblinks {
-    width: 100%;
   }
 
   #weblinks li{
