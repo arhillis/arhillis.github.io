@@ -1,0 +1,24 @@
+.project {
+  width: 180px;
+  height: 135px;
+  margin: 15px;
+  border: 5px solid #3F7883;
+  transition: background-color 0.5s;
+  box-shadow: 3px 3px 5px #101e21;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center; }
+  .project h3 {
+    background-color: #3F7883;
+    margin: 0;
+    padding: 3px;
+    color: #f8f8f8; }
+  .project img {
+    margin-top: 10px;
+    border-radius: 5px; }
+
+.project:hover {
+  background-color: #E3E3E3;
+  box-shadow: 3px 3px 10px #013A45; }
+
+/*# sourceMappingURL=SassStyles.css.map */

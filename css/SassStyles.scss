@@ -1,0 +1,31 @@
+$nav-bg: #3F7883;
+$nav-text: #f8f8f8;
+
+$project-width: 180px;
+
+.project {
+  width: $project-width;
+  height: $project-width * 0.75;
+  margin: $project-width / 12;
+  border: 5px solid $nav-bg;
+  transition: background-color 0.5s;
+  box-shadow: 3px 3px 5px $nav-bg * 1/4;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  h3{
+    background-color: $nav-bg;
+    margin: 0;
+    padding: 3px;
+    color: $nav-text;
+  }
+  img{
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}
+
+.project:hover{
+    background-color: #E3E3E3;
+    box-shadow: 3px 3px 10px #013A45;
+}
