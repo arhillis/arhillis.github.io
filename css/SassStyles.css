@@ -9,7 +9,8 @@ nav {
   background-color: #3F7883;
   top: 0;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
   nav ul {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -89,6 +90,9 @@ button {
   button:hover {
     background-color: #f8f8f8;
     color: #013A45; }
+
+#contact {
+  overflow: hidden; }
 
 #weblinks {
   display: flex;

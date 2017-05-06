@@ -14,10 +14,6 @@ h2,
 }
 
 
-#contact{  
-  overflow: hidden;
-}
-
 
 textarea,
 input{
@@ -54,11 +50,6 @@ article {
   height: 15em;
 }
 
-/*----------- FOOTER -----------*/
 
-footer {
-  padding: 10px;
-  height: 50px;
-}
 
 

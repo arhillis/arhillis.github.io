@@ -30,6 +30,7 @@ nav{
   top: 0;
   width: 100%;
   position: fixed;
+  z-index: 1;
   ul{
     list-style-type: none;  
     @include navstyle();
@@ -115,6 +116,9 @@ button{
   }
 }
 
+#contact{
+  overflow: hidden;
+}
 #weblinks{
   @include flexbox();
   justify-content: flex-end;
