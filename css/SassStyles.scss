@@ -131,11 +131,23 @@ button{
   }
 }
 
+.default{
+  visibility: visible;
+}
+.hover{
+  visibility: hidden;
+}
 .btn{
   position: relative;
   width: $btn-width;
   height: $btn-width;
   margin: $btn-width/5;
+  &:hover .default{
+    visibility: hidden;
+  }
+  &:hover .hover{
+    visibility: visible;
+  }
 }
 
 

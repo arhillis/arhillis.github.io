@@ -104,11 +104,21 @@ button {
     width: 25px;
     border-radius: 5px; }
 
+.default {
+  visibility: visible; }
+
+.hover {
+  visibility: hidden; }
+
 .btn {
   position: relative;
   width: 25px;
   height: 25px;
   margin: 5px; }
+  .btn:hover .default {
+    visibility: hidden; }
+  .btn:hover .hover {
+    visibility: visible; }
 
 @media screen and (max-width: 950px) {
   #weblinks {
