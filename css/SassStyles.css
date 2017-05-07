@@ -1,3 +1,6 @@
+.fancyfont {
+  font-family: 'Yellowtail', cursive; }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -78,6 +81,9 @@ main {
   flex-wrap: wrap;
   justify-content: center; }
 
+#summary {
+  width: 100%; }
+
 button {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -93,6 +99,17 @@ button {
 
 #contact {
   overflow: hidden; }
+
+#message {
+  float: right;
+  width: 40%;
+  margin: 4%; }
+  #message textarea {
+    height: 15em;
+    border-radius: 4px;
+    width: 100%; }
+  #message input {
+    border-radius: 4px; }
 
 #weblinks {
   display: flex;

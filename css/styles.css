@@ -1,40 +1,18 @@
-button
-a:any-link{  
-  text-decoration: none;
-}
-
-.fancyfont{
-  font-family: 'Yellowtail', cursive;
-}
-
 h2,
-#summary,
-#message textarea{
-  width: 100%;
-}
+#summary{
+  width: 100%;}
 
 
 
-textarea,
-input{
-  border-radius: 4px;
-}
-
-#message{
-  float: right;
-}
 
 article {
   width: 80%;
   margin: 0 auto;
   padding: 10px;
 }
-
-
-
 /*--------- CONTACT SECTION -----------*/
 
-#info, #message{
+#info{
   width: 40%;
   margin: 4%;
 }
@@ -46,10 +24,3 @@ article {
 #message{
   height: 500px;
 }
-#message textarea{
-  height: 15em;
-}
-
-
-
-

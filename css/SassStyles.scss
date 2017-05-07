@@ -21,6 +21,10 @@ $project-width: 180px;
   color: $nav-text;
 }
 
+.fancyfont{
+  font-family: 'Yellowtail', cursive;
+}
+
 body{
   @include navstyle();
 }
@@ -103,6 +107,10 @@ main{
   justify-content: center;
 }
 
+#summary{
+  width: 100%;
+}
+
 button{
   @include body();
   background-color: $hover;
@@ -118,6 +126,20 @@ button{
 
 #contact{
   overflow: hidden;
+}
+
+#message{
+  float: right;
+  width: 40%;
+  margin: 4%;
+  textarea{
+    height: 15em;
+    border-radius: 4px;
+    width: 100%;
+  }
+  input{
+    border-radius: 4px;
+  }
 }
 #weblinks{
   @include flexbox();
