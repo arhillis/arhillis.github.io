@@ -65,6 +65,7 @@ header{
 
 h2{
   text-align: center;
+  width: 100%;
 }
 
 main{
@@ -75,6 +76,12 @@ main{
   font-size: 1.75em;
   padding-top: 0.75em;
   }
+}
+
+article{
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .project {
@@ -141,6 +148,13 @@ button{
     border-radius: 4px;
   }
 }
+
+#info{
+  width: 40%;
+  margin: 4%;
+  float: left;
+}
+
 #weblinks{
   @include flexbox();
   justify-content: flex-end;

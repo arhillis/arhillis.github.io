@@ -1,26 +1,7 @@
-h2,
-#summary{
-  width: 100%;}
 
 
 
 
-article {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
-}
 /*--------- CONTACT SECTION -----------*/
 
-#info{
-  width: 40%;
-  margin: 4%;
-}
 
-#info{
-  float: left;
-  margin-left: 0;
-}
-#message{
-  height: 500px;
-}

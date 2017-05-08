@@ -41,7 +41,8 @@ header {
   padding: 40px 0; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 main {
   padding: 20px auto;
@@ -50,6 +51,11 @@ main {
   main h2 {
     font-size: 1.75em;
     padding-top: 0.75em; }
+
+article {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px; }
 
 .project {
   width: 180px;
@@ -110,6 +116,11 @@ button {
     width: 100%; }
   #message input {
     border-radius: 4px; }
+
+#info {
+  width: 40%;
+  margin: 4%;
+  float: left; }
 
 #weblinks {
   display: flex;
