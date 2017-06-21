@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Random Quote Generator</title>
+        <style>
+            body, #btn{
+                background-color: lightcyan;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            article{
+                background-color: lightgray;
+                color: darkslateblue;
+                width: 75%;
+                margin: 0, auto, 0, auto;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            blockquote{
+                font-size: 1.5em;
+                font-style: italic;
+            }
+            #source{
+                text-align: center;
+            }
+            #btn{
+                color: lightgray;
+                background-color: darkslateblue;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <blockquote>"<span id="quote"></span>"</blockquote>
+            <p id = "source"></p>
+            <button id="btn">New Quote</button>
+        </article>
+
+        <script type="text/JavaScript">                
+                var quotes = [
+                {
+                    quote : "Every saint has a past, and every sinner has a future.",
+                    source : "Oscar Wilde"
+                },
+                {
+                    quote : "There are 10 types of people in this world: those that understand binary and those that don't.",
+                    source : "Programming Joke"
+                },
+                {
+                    quote : "The mark of an educated mind is the ability to accept an idea without agreeing with it.",
+                    source : "Socrates"
+                },
+                {
+                    quote : "A creative man is motviated by the desire to achieve, not the disire to beat others.",
+                    source : "Ayn Rand"
+                },
+                {
+                    quote : "May your choices reflect your hopes and not your fears.",
+                    source : "Nelson Mandela"
+                },
+                {
+                    quote : "Do a little more each day than you think you can.",
+                    source : "Lowell Thomas"
+                },
+                {
+                    quote : "Insanity is doing the same thing over and over and expecting different results.",
+                    source : "Albert Einstein"
+                },
+                {
+                    quote : "An investment in knowledge pays the best dividends.",
+                    source : "Benjamin Franklin"
+                },
+                {
+                    quote : "Great minds discuss ideas, average minds discuss events, and small minds discuss people.",
+                    source : "Elanor Roosevelt"
+                },
+                {
+                    quote : "Success is not what you have but who you are.",
+                    source : "Bo Bennett"
+                },
+                {
+                    quote : "Everything you can imagine is real.",
+                    source : "Pablo Picasso"
+                }
+            ];
+
+            var newQuote = function(){
+                var num = Math.round((Math.random() * 10)) ;
+                document.getElementById("quote").innerHTML = quotes[num].quote;
+                document.getElementById("source").innerHTML = quotes[num].source;
+            };
+            
+            newQuote();
+
+            var btnEl = document.getElementById("btn");
+            btnEl.addEventListener("click", function(){
+                newQuote();
+            });
+        </script>
+    </body>
+</html>
