@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Monster Program with HTML5 Canvas</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        #monster{
+            margin: 0 auto;
+            width: 500px;
+            color: navy;
+            border: 1px solid navy;
+        }
+
+        #monster h1{
+            text-align: center;
+            background: navy;
+            color: white;
+        }
+        #monster p{
+            padding: 15px;
+        }
+        #myCanvas{
+            border: 0.02px solid navy;
+            background-color: lightcyan;
+            margin: 5px 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="monster">
+        <h1>My Monster</h1>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+        
+        <p>Use the arrows on your keyboard or click on the canvas to move the monster around. Use the space bar to rotate the monster.</p>
+
+        <p>Note: for best results, make sure the entire canvas is visible on your browser.</p>
+    </div>
+	<script type="text/javascript" src="moveMonster.js"></script>
+</body>
+</html>
