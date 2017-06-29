@@ -8,6 +8,10 @@ document.getElementById("quotes").addEventListener("mouseover", function() {
     sumEl.innerHTML = "This is the random quote generator that I wrote for the Free Code Camp curriculum.";
 });
 
+document.getElementById("monster").addEventListener("mouseover", function() {
+    sumEl.innerHTML = "This is a simple program I wrote while studying HTML5 canvas. I am still working on a thumbnail for this project.";
+});
+
 var blankEls = document.getElementsByClassName("blank");
 
 for(var i = 0; i < blankEls.length; i++){
