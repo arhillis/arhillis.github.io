@@ -78,7 +78,7 @@ function init() {
       }
       this.draw();
   }
-  monster1 = new monster(100, 100, 0, 50, "red");
+  monster1 = new monster(100, 100, 0, 50, "#3F7883");
 
   monster1.draw();
 
