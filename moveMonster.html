@@ -39,7 +39,13 @@
     <div id="monster">
         <h1>My Monster</h1>
         <canvas id="myCanvas" width="400" height="400"></canvas>
-        
+        <div id="btnGroup">
+            <button onmousedown="monster1.move(38);">Up</button>
+            <button onmousedown="monster1.move(37);">Left</button>
+            <button onmousedown="monster1.move(32);">Spin</button>
+            <button onmousedown="monster1.move(39);">Right</button>            
+            <button onmousedown="monster1.move(40);">Down</button>
+        </div>
         <p>Use the arrows on your keyboard or click on the canvas to move the monster around. Use the space bar to rotate the monster. You can also use the plus and minus keys to resize the monster.</p>
 
         <p>Note: for best results, make sure the entire canvas is visible on your browser.</p>
