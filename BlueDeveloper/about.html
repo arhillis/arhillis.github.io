@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<title>Blue Developer- About</title>
+<style>
+    </style>
+</head>
+
+<body>
+<div id="container">
+	<header>
+        <h1><span class="blue-text">Blue</span> Developer Directory</h1>
+        <h2>Find A Developer <span class="white-text">NOW</span></h2>
+     </header><!--header end-->
+        
+    <nav id="menu">
+        <ul>
+            <li class="menuitem"><a href="index.html">Home</a></li>
+            <li class="menuitem"><a href="about.html">About Us</a></li>
+            <li class="menuitem"><a href="browse.html">Browse Developers</a></li>
+            <li class="menuitem"><a href="register.html">Register as a Developer</a></li>
+            <li class="menuitem"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav><!--menu end-->
+	
+    <aside id="left-menu">
+        <h3>Links</h3>
+        <ul>
+            <li><a href="browse.html">SEO</a></li>
+            <li><a href="browse.html">PHP</a></li>
+            <li><a href="browse.html">Ajax</a></li>
+            <li><a href="browse.html">jQuery</a></li>
+            <li><a href="browse.html">Web design</a></li>
+            <li><a href="browse.html">Web Programming</a></li>
+            <li><a href="browse.html">Content Creation</a></li>
+            <li><a href="browse.html">Internet Marketing</a></li>
+            <li><a href="browse.html">XHTML Templates</a></li>
+        </ul>
+    </aside><!--leftmenu end-->
+    <main>
+        <section id="content">		
+            <h2>Welcome to Blue Developer Directory! </h2>
+            <article>
+            <h3>Who Are We?</h3>
+            <p>We are a fictional website and service that list top web developers around the world. Search and browse fictional web developers on our website absolutley FREE!</p>
+            </article>
+            <article>
+            <h3>What Skills Do Our Developers Have?</h3>
+            <p>Our listed fictional web developers skill ranges from Graphic design with Photoshop, Illustrator and Fireworks to markup languages like HTML5, XHTML and XML to programming languages such as Javascript, PHP, Python and ASP</p>
+            </article>
+            <div id="commercial">
+                <video id="ad" width="500" height="350" controls>
+                    <source src="video/ad.mp4">
+                        <p>Please update your browser.</p>
+                </video>
+                <div style="width: 400px; margin: 0 150px;" >
+                    <button onclick="playPause();" id="playBtn">Play</button>
+                    <button onclick="makeBig();">Big</button>
+                    <button onclick="makeSmall();">Small</button>
+                    <button onclick="makeNormal();">Normal</button>
+                </div>
+            </div>
+            <script>
+                var adEl = document.getElementById("ad");
+                var playBtn = document.getElementById("playBtn");
+
+                function playPause(){
+                    if(adEl.paused){
+                        adEl.play();
+                        playBtn.textContent = "Pause";
+
+                    } else{
+                        adEl.pause();
+                        playBtn.textContent = "Play";
+                    }
+                }
+                function makeBig(){
+                    var commEl = document.getElementById("commercial");
+                    adEl.style.width = 650 + "px";
+                    adEl.style.margin = 10 + "px " + 5 + "px";
+                    commEl.style.margin = "0 auto";
+                }
+                function makeSmall(){
+                    adEl.style.width = 350 + "px";
+                }
+                function makeNormal(){
+                    adEl.style.width = 500 + "px";
+                }
+            </script>
+        </section><!--content end-->
+	</main>
+</div><!--container end-->
+    <footer>
+        <p>Designed by Andrielle Hillis</p>
+    </footer>
+</body>
+</html>

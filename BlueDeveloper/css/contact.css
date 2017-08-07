@@ -1,0 +1,33 @@
+/*Forms*/
+label{
+    display: inline-block;
+    width: 250px;
+}
+form p{
+    padding: 10px;
+}
+input[name="submit"]{
+    background: #A9D1FA;
+}
+fieldset p{
+    display: block;
+    width: 100%;
+    clear: both;
+}
+#services label{
+    float: left;
+}
+#checkboxes{
+    flex-wrap: wrap;
+    width: 225px;
+    padding-left: 100px;
+}
+input[type="checkbox"]{
+    margin: 15px;
+}
+#map{
+    width: 400px;
+    height: 250px;
+    float: right;
+    border: 2px solid black;
+}

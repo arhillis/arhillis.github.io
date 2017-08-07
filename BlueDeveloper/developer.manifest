@@ -1,0 +1,18 @@
+CACHE MANIFEST
+
+#2017-08-07
+
+CACHE:
+index.html
+info.html
+css/main.css
+images/background.png
+images/web.jpg
+
+
+#Require user to be online
+NETWORK:
+contact.html
+
+FALLBACK:
+*.html fallback.html

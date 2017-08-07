@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/contact.css" />
+<title>Blue Developer - Contact Us</title>
+<style>
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1><span class="blue-text">Blue</span> Developer Directory</h1>
+            <h2>Find A Developer <span class="white-text">NOW</span></h2>
+        </header><!--header end-->
+            
+        <nav id="menu">
+            <ul>
+                <li class="menuitem"><a href="index.html">Home</a></li>
+                <li class="menuitem"><a href="about.html">About Us</a></li>
+                <li class="menuitem"><a href="browse.html">Browse Developers</a></li>
+                <li class="menuitem"><a href="register.html">Register as a Developer</a></li>
+                <li class="menuitem"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav><!--menu end-->
+        
+        <aside id="left-menu">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="browse.html">SEO</a></li>
+                <li><a href="browse.html">PHP</a></li>
+                <li><a href="browse.html">Ajax</a></li>
+                <li><a href="browse.html">jQuery</a></li>
+                <li><a href="browse.html">Web design</a></li>
+                <li><a href="browse.html">Web Programming</a></li>
+                <li><a href="browse.html">Content Creation</a></li>
+                <li><a href="browse.html">Internet Marketing</a></li>
+                <li><a href="browse.html">XHTML Templates</a></li>
+            </ul>
+        </aside><!--leftmenu end-->
+        <main>
+            <section id="content">	
+                <h2>Contact Us</h2>
+                <p>Please use this form to contact a member of our web development team.</p>
+                <form action="process.php" method="post">
+                    <p>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name"/>
+                    </p>
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email"/>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone"/>
+                    </p>
+                    <p>
+                        <label for="time">Best Time to Call</label>
+                        <input type="radio" name="time" value="morning" checked>Morning
+                        <input type="radio" name="time" value="afternoon">Afternoon
+                        <input type="radio" name="time" value="evening">Evening
+                    </p>
+                    <p>
+                        <label for="location">Location</label>
+                        <input name="location" list="location">
+                        <datalist id="location">
+                            <option value="New York">
+                            <option value="Boston">
+                            <option value="Chicago">
+                            <option value="Los Angeles">
+                            <option value="Miami">
+                            <option value="Seattle">
+                            <option value="Dallas">
+                            <option value="Atlanta">
+                            <option value="Denver">
+                            <option value="Houston">
+                            <option value="Philidelphia">
+                            <option value="Phoenix">
+                            <option value="San Francisco">
+                            <option value="Austin">
+                            <option value="San Diego">
+                            <option value="Memphis">
+                            <option value="Detroit">
+                        </datalist>
+                    </p>
+                    <fieldset name="about">
+                        <legend>About Your Project</legend>
+                        <script type="text/javascript">
+                            function updateTextInput(val){
+                                document.getElementById("textInput").value = val;
+                            }
+                        </script>
+                        <p>
+                            <label for="budget">Budget: </label>
+                            <input type="range" name="rangeInput" min="100" max="10000" onchange="updateTextInput(this.value);">                                     
+                            <input type="text" id="textInput" value="">
+                        </p>
+                        <p id="services">
+                            <label for="call">Services Needed: (Check all that apply) </label> 
+                            <div id= "checkboxes">
+                                <input type="checkbox" name="services" value="html">HTML5/CCS3
+                                <input type="checkbox" name="services" value="php">PHP
+                                <input type="checkbox" name="services" value="asp">ASP               <input type="checkbox" name="services" value="java">Java
+                                <input type="checkbox" name="services" value="c">C++
+                                <input type="checkbox" name="services" value="design">Design
+                            </div>
+                        </p>
+                        <p>
+                            <label for="website">Current Website: </label>
+                            <input type="url" name="website">
+                        </p>
+                        <p>
+                            <label for="start">Start Date: </label>
+                            <input type="date" name="start">
+                        </p>
+                        <p>
+                            <label for="pages">Number of Pages: </label>
+                            <input type="number" name="pages">
+                        </p>
+                        <p>
+                            <label for="color">Main Color Of Site: </label>
+                            <input type="color" name="color">
+                        </p>
+                        
+                    </fieldset>	
+                    <p>
+                        <input type="submit" name="submit" value="Submit Inquiry">
+                    </p>
+                </form>
+            </section><!--content end-->
+        </main>
+    </div><!--container end-->
+    <footer>
+        <p>Designed by Andrielle Hillis</p>
+    </footer>
+</body>
+</html>
