@@ -8,6 +8,7 @@ info.html
 css/main.css
 images/background.png
 images/web.jpg
+video/ad.mp4
 
 
 #Require user to be online
@@ -16,4 +17,4 @@ contact.html
 register.html
 
 FALLBACK:
-*.html fallback.html
+*.html offline.html
