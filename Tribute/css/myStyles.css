@@ -40,12 +40,12 @@ p {
 }
 
 .page-pic {
-  width: 250px;
+  width: 100%;
 }
-
-.modal-pic {
-  width: 500px;
-  margin: 30px;
+    
+.modal-pic{
+  width: 75%;
+  margin: 10px 12.5%;
 }
 
 .modal-footer {
@@ -81,11 +81,6 @@ figure {
 
 }
 @media only screen and (max-width: 1170px){
-    
-    .modal-pic{
-        width: 75%;
-        margin: 10px 12.5%;
-    }
     #imgNav{
       margin-left: 10px;
       padding: 10px;
