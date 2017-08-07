@@ -3,13 +3,13 @@
 
         var coronation1 = {
             modId: "coronation1",
-            src: "images/coronation.jpg",
+            src: "../images/coronation.jpg",
             alt: "King George VI- coronation portrait",
             figcaption: "His coronation was on May 12, 1937."
         }
         var coronation2 ={
             modId: "coronation2",
-            src: "images/coronation2.jpg",
+            src: "../images/coronation2.jpg",
             alt: "King George VI sitting on the throne",
             figcaption: "1937 was known as the Year of Three Kings."
         };
