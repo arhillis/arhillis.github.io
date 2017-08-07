@@ -13,6 +13,7 @@ images/web.jpg
 #Require user to be online
 NETWORK:
 contact.html
+register.html
 
 FALLBACK:
 *.html fallback.html
