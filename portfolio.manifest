@@ -1,0 +1,36 @@
+CACHE MANIFEST
+
+#2017-08-07
+
+CACHE:
+
+#HTML files
+
+index.html
+moveMonster.html
+
+#CSS files
+
+css/SassStyles.css
+
+#Images
+
+images/icons/CodePen.jpg
+images/icons/CodePen2.jpg
+images/icons/FreeCodeCamp.jpg
+images/icons/FreeCodeCamp2.jpg
+images/icons/GitHub.jpg
+images/icons/GitHub2.jpg
+images/icons/Google+.jpg
+images/icons/Google+2.jpg
+images/icons/FreeCodeCamp.jpg
+images/icons/FreeCodeCamp2.jpg
+images/icons/GitHub.jpg
+images/icons/GitHub2.jpg
+
+#Require user to be online
+NETWORK:
+quoteGenerator.html
+
+FALLBACK:
+*.html offline.html
