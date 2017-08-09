@@ -15,6 +15,7 @@ css/SassStyles.css
 
 #Images
 
+images/spots.jpg
 images/icons/CodePen.jpg
 images/icons/CodePen2.jpg
 images/icons/FreeCodeCamp.jpg
@@ -23,10 +24,12 @@ images/icons/GitHub.jpg
 images/icons/GitHub2.jpg
 images/icons/Google+.jpg
 images/icons/Google+2.jpg
-images/icons/FreeCodeCamp.jpg
-images/icons/FreeCodeCamp2.jpg
-images/icons/GitHub.jpg
-images/icons/GitHub2.jpg
+images/icons/KhanAcademy.jpg
+images/icons/KhanAcademy2.jpg
+images/icons/LinkedIn.jpg
+images/icons/LinkedIn2.jpg
+images/projects/KingGeorge.jpg
+images/projects/quotes.jpg
 
 #Require user to be online
 NETWORK:
