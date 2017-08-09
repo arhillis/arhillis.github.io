@@ -6,6 +6,7 @@ CACHE:
 index.html
 info.html
 css/main.css
+javascript/displayName.js
 images/background.png
 images/web.jpg
 video/ad.mp4
