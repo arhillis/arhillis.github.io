@@ -15,7 +15,6 @@ var sendBtn = document.getElementById("sendBtn");
 var clearBtn = document.getElementById("clearBtn");
 
 function init(){
-    alert("Script works");
     displayInfo();
     sendBtn.addEventListener("click", saveInfo, false);
     clearBtn.addEventListener("click", clearAll, false);
