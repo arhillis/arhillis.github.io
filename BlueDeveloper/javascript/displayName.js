@@ -1,11 +1,4 @@
-/*
-To-do list:
 
-1. figure out how to get it to display the email address in the newsletter form.
-2. Add the clear button.
-
-
-*/
 
 var nameEl = document.getElementById("nameBox");
 var emailEl = document.getElementById("emailBox");
