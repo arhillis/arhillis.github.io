@@ -1,0 +1,152 @@
+:root{
+    --blue: #5B85AA;
+    --darkblue: #173753;
+    --white: #FBFBFB;
+    --gray: #E0DDCF;
+    --black: #172A3A;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans serif;
+    background: var(--white);
+}
+
+nav {
+    background: var(--darkblue);
+    opacity: 0.8;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+li {
+    list-style-type: none;
+    padding: 15px 15px;
+    float: left;
+    font-weight: bold;
+}
+
+li:first-child {
+    padding-left: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+h1,
+h2,
+ul,
+article {
+    width: 80%;
+    max-width: 980px;
+    margin: auto;
+}
+
+header {
+    background: var(--blue);
+    color: var(--white);
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+nav li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+main h2 {
+    color: var(--darkblue);
+    font-size: 2.25em;
+    margin-left: 0;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+main {
+    padding-top: 50px;
+}
+
+article {
+    margin: 20px auto;
+    padding: 75px 0;
+}
+
+p {
+    color: var(--black);
+    font-size: 1.25em;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact h2 {
+    clear: both;
+}
+
+.desc-contact {
+    float: left;
+    width: 50%;
+}
+
+form {
+    float: right;
+}
+
+p input,
+textarea {
+    border: 1px solid var(--darkblue);
+    border-radius: 2px;
+}
+
+#contact form,
+#message textarea {
+    width: 300px;
+}
+
+#name {
+    float: left;
+}
+
+#email {
+    float: right;
+}
+
+#message {
+    clear: both;
+    margin-bottom: 0;
+}
+
+#message textarea {
+    height: 150px;
+}
+
+#submitBtn {
+    margin-top: 0;
+}
+
+footer {
+    height: 150px;
+    background: var(--blue);
+    clear: both;
+}
+
+footer p {
+    color: #f8f8f8;
+    padding-top: 75px;
+    text-align: center;
+}

@@ -1,0 +1,113 @@
+:root {
+    --project-width: 250px;
+    --project-img-width-var: calc(var(--project-width) / 2);
+    --project-img-width: var(--project-img-width-var);
+    --project-img-left-var: calc(var(--project-width) / 4);
+    --project-img-left: var(--project-img-left-var);
+    --project-height: 250px;
+    --project-img-top-var: calc(var(--project-height) / 3.3);
+    --project-img-top: var(--project-img-top-var);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    width: var(--project-width);
+    height: var(--project-height);
+    margin-bottom: 50px;
+    overflow: hidden;
+    border: 5px solid var(--blue);
+    padding: 0;
+    position: relative;
+    box-shadow: 5px 5px 10px var(--darkblue);
+}
+
+.project, .project img{
+    border-radius: 5px;
+}
+.project a {
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+.project h3 {
+    color: var(--white);
+    background: var(--blue);
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.project img {
+    position: absolute;
+    top: var(--project-img-top);
+    left: var(--project-img-left);
+    width: var(--project-img-width);
+    z-index: -1;
+}
+
+.desc {
+    position: absolute;
+    top: 50px;
+    height: 200px;
+    padding-top: 200px;
+    animation-name: slide-down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.desc p {
+    background: var(--darkblue);
+    color: var(--white);
+    opacity: 0.8;
+    padding: 15px;
+    padding-top: 30px;
+    height: 100%;
+}
+
+.desc:hover {
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    0% {
+        padding-top: 150px;
+    }
+    25% {
+        padding-top: 85px;
+    }
+    50% {
+        padding-top: 55px;
+    }
+    75% {
+        padding-top: 27px;
+    }
+    100% {
+        padding-top: 7.5px;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        padding-top: 0px;
+    }
+    25% {
+        padding-top: 50px;
+    }
+    50% {
+        padding-top: 100px;
+    }
+    75% {
+        padding-top: 150px;
+    }
+    100% {
+        padding-top: 200px;
+    }
+}
