@@ -1,119 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" manifest="portfolio.manifest">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="A portfolio site for Andrielle Hillis">
-      <title>Andrielle Hillis' Portfolio</title>
-      <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet"> 
-      <link rel="stylesheet" type="text/css" href="css/SassStyles.css" media="screen">
-      <script type="text/javascript" src="scripts.js"></script>      
-    </head>
-    <body>
-        <nav>
-		    <ul>
-                <li><a class="active fancyfont" href="#home">Home</a></li>
-                <li><a href="#about" class="fancyfont">About</a></li>
-                <li><a href="#projects" class="fancyfont">Projects</a></li>
-                <li><a href="#contact" class="fancyfont">Contact</a></li>
-            </ul>            
-	      </nav>
-	    <header id="home" itemscope>
-		    <h1 class="fancyfont" itemprop="name">Andrielle Hillis</h1>
-		    <h2 class="fancyfont" itemprop="jobTitle">Front-End Developer</h2>   
-	    </header>
-	    <main>
-            <article id="about">
-                <h2>About Me</h2>
-                <p>I attended the University of North Texas and graduated with a Bachelor of Arts degree (German major, Spanish minor), and about all it landed me was a cashiering job at Target. Not very exciting. So, I started to code and develop web pages for about a year now. I know <abbr title="Hypertext Markup Language">HTML</abbr>/<abbr title="Cascading Stylesheets">CSS</abbr>, Processing JS, some Python, and a little bit of C#. It would be nice to actually be able to earn some money doing it one day, but for now, it is just a hobby.</p>
-            
-                <p>I currently live in norteast Texas with my husband and three children. I also work at the Target in Texarkana, and in my spare time, I like to cook and program.</p>
-            
-                <h3>How I got into Programming</h3>
-            
-                <p>Oh, yeah, I forgot to mention that I'm actually studying to be a teacher.  I wanted to be a math teacher, since I was rather good at it in school.  But I learned really quickly that I had forgotten <em>a lot</em> of what I learned in school. Well, I was telling a teacher of my plight, and they recommended Khan Academy. So, one day, I decided to try their <a href="https://www.khanacademy.org/hourofcode" target="new">Hour of Code</a>.  From then on, I was hooked on coding!</p>
-            </article> 
-            <article id="projects" itemscope>
-                <h2>Projects</h2>
-                <a href="https://arhillis.github.io/Tribute-Page/" class="project" id="tribute">
-                    <h3>Tribute Page</h3>
-                    <img src="images/projects/KingGeorge.jpg" alt="protrait of King George VI"/>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Andrielle Hillis- Front-End Developer</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/projects.css" media="screen">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Andrielle Hillis</h1>
+        <h2>Front-End Developer</h2>
+    </header>
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+            <p>I attended the University of North Texas and graduated with a Bachelor of Arts degree (German major, Spanish
+                minor), and about all it landed me was a cashiering job at Target. Not very exciting. So, I started to code
+                and develop web pages for about a year now. I know
+                <abbr title="Hypertext Markup Language">HTML</abbr>/
+                <abbr title="Cascading Stylesheets">CSS</abbr>, Processing JS, some Python, and a little bit of C#. It would be nice to actually be able to earn
+                some money doing it one day, but for now, it is just a hobby.</p>
+        </article>
+        <article id="projects">
+            <h2>My Work</h2>
+            <section class="project">
+                <a href="https://arhillis.github.io/Tribute-Page/">
+                <h3>Tribute Page</h3>
+                  <img src="https://arhillis.github.io/images/projects/KingGeorge.jpg" alt="King George VI">
+                  <div class="desc">
+                    <p>This is the tribute to King George VI that I wrote for the Free Code Camp curriculum.</p>
+                  </div>                  
                 </a>
-                <a href="quoteGenerator.html" class="project" id="quotes">
-                    <h3>Random Quotes</h3>
-                    <img src="images/projects/quotes2.jpg" alt="quotation marks pic"/>
+              </section>
+              <section class="project">
+                <a href="#">
+                <h3>Random Quotes</h3>
+                  <img src="images/quote-marks.png" alt="Quotation marks">
+                  <div class="desc">
+                    <p>This is the Random Quote Generator that I wrote for the Free Code Camp curriculum.</p>
+                  </div>                  
                 </a>
-                <a href="moveMonster.html" class="project" id="monster">
-                    <h3>Move Monster</h3>
+              </section>
+              <section class="project">
+                <a href="#">
+                <h3>Pixel Art Maker</h3>
+                  <img src="images/grid.png" alt="Pixel Art">
+                  <div class="desc">
+                    <p>This is the Pixel Art Maker I made for the Grow with Google Scholarship Course.</p>
+                  </div>                  
                 </a>
-                <a href="BlueDeveloper/index.html" class="project blank">
-                    <h3>Blue Developer</h3>
+              </section>
+              <section class="project">
+                <a href="#">
+                <h3>Move Monster</h3>
+                  <img src="images/monster.png" alt="Monster">
+                  <div class="desc">
+                    <p>This is a game that I created after studying HTML5 Canvas</p>
+                  </div>                  
                 </a>
-                <div class="project blank">
-                    <h3>Project</h3>
-                </div>
-                <div class="project blank">
-                    <h3>Project</h3>
-                </div>
-                <p id="summary">Hover over a project to see a description.</p>
-            </article>   
-            <article  id="contact">   
-                <h2>Contact</h2>
-                <div id="info">
-                    <p>I would love to hear more from you about how I might make my website better or if you actually have some work to send my way. 
-                    <br>
-                    <br>
-                    <strong>Note: </strong>The form on the right does not work yet. I am still learning how to create forms.</p>
-                    <p><strong>Phone: </strong>(903)219-2127</p>    
-                    <p><strong>Email: </strong>andriellerhillis@gmail.com</p>
-                    	
-                </div>           
-                <div id="message">
-                    <form action="https://formspree.io/andriellerhillis@gmail.com" method="POST">
-			    <input type="text" name="name">
-			    <input type="email" name="_replyto">
-			    <input type="submit" value="Send">
-		    </form> 
-                    <ul id="weblinks">
-                        <li  class="btn">
-                            <a href="https://codepen.io/arhillis/#" itemprop="url">
-                                <img src="images/icons/CodePen.jpg" alt="Default image" class="default glyph">
-                                <img src="images/icons/CodePen2.jpg" alt="Hover image" class="hover glyph">
-                            </a>
-                        </li>
-                        <li  class="btn">
-                            <a href="https://www.khanacademy.org/profile/arhillis/" itemprop="url">
-                                <img src="images/icons/KhanAcademy.jpg" alt="Default image" class="default glyph">
-                                <img src="images/icons/KhanAcademy2.jpg" alt="Hover image" class="hover glyph">
-                            </a>
-                        </li>
-                        <li  class="btn">
-                            <a href="https://www.freecodecamp.com/arhillis" itemprop="url">
-                                <img src="images/icons/FreeCodeCamp.jpg" alt="Default image" class="default glyph">
-                                <img src="images/icons/FreeCodeCamp2.jpg" alt="Hover image" class="hover glyph">
-                            </a>
-                        </li>
-                        <li  class="btn">
-                            <a href="https://plus.google.com/u/0/109043758950904996114" itemprop="url">
-                                <img src="images/icons/Google+.jpg" alt="Default image" class="default glyph">
-                                <img src="images/icons/Google+2.jpg" alt="Hover image" class="hover glyph">
-                            </a>
-                        </li>
-                        <li  class="btn">
-                            <a href="https://www.linkedin.com/in/andrielle-hillis-50a27b30/" itemprop="url">
-                                <img src="images/icons/LinkedIn.jpg" alt="Default image" class="default glyph">
-                                <img src="images/icons/LinkedIn2.jpg" alt="Hover image" class="hover glyph">
-                            </a>
-                        </li>
-                        <li  class="btn">
-                            <a href="https://github.com/arhillis" itemprop="url">
-                                <img src="images/icons/GitHub.jpg" alt="Default image" class="default glyph">
-                                <img src="images/icons/GitHub2.jpg" alt="Hover image" class="hover glyph">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </article>    
-	    </main>
-        <script type="text/javascript" src="JavaScript/indexScript.js"></script>
+              </section>
+        </article>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p class="desc-contact">Feel free to contact me using the form on the left. You can also call me at (903) 219-2127.</p>
+            <form action="https://formspree.io/andriellerhillis@gmail.com" method="POST">
+                <p id="name">
+                    <input type="text" name="name" placeholder="Name" required>
+                </p>
+                <p id="email">
+                    <input type="email" name="_replyto" placeholder="Email" required>
+                </p>
+                <p id="message">
+                    <textarea></textarea>
+                </p>
+                <p id="submitBtn">
+                    <input type="submit" value="Send">
+                </p>
+            </form>
+        </article>
+        <footer>
+            <p>Designed by Andrielle Hillis</p>
+        </footer>
+
+    </main>
 </body>
+
+</html>
