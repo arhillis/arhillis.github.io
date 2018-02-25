@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="css/colorGame.css">
+</head>
+
+<body>
+    <h1>The Great
+        <span id="color-display">RGB</span> Color Game</h1>
+
+    <div class="stripe">
+        <div class="container">
+            <button id="reset">New Game</button>
+            <button id="rgb-btn" class="mode-btn selected">RGB</button>
+            <button id="hex-btn" class="mode-btn">HEX</button>
+            
+            <button id="easy-btn" class="level-btn">Easy</button>
+            <button id="med-btn" class="level-btn">Medium</button>
+            <button id="hard-btn" class="level-btn selected">Hard</button>
+        </div>
+    </div>
+    <div class="stripe">
+        <p id="message">
+            </p>
+    </div>
+
+    <div class="container" id="squares">
+    </div>
+
+    <script>
+        let colors = generateRandomColors(6),
+            level = localStorage.getItem("level") || "hard",
+            pickedColor = pickColor(),
+            hexMode = false;
+
+        let divs = document.querySelectorAll(".square"),
+            colorDisplay = document.getElementById("color-display"),
+            message = document.getElementById("message"),
+            resetBtn = document.getElementById("reset"),
+            easyBtn = document.getElementById("easy-btn"),
+            medBtn = document.getElementById("med-btn"),
+            hardBtn = document.getElementById("hard-btn"),
+            hexBtn = document.getElementById("hex-btn"),
+            rgbBtn = document.getElementById("rgb-btn");
+
+        colorDisplay.textContent = pickedColor;
+
+        function generateRandomColors(num) {
+            var squares = document.getElementById("squares");
+            let palette = [];
+
+            squares.innerHTML = " ";
+
+
+            for (let i = 0; i < num; i++) {
+                let red = Math.floor(Math.random() * 256),
+                    green = Math.floor(Math.random() * 256),
+                    blue = Math.floor(Math.random() * 256),
+                    color = {
+                        rgb: "rgb(" + red.toString() + ", " + green.toString() + ", " + blue.toString() + ")",
+                        hex: rgbToHex(red, green, blue)
+                    },
+                    div = document.createElement("div");
+
+                squares.appendChild(div);
+                div.classList.add("square");
+                div.style.backgroundColor = color.rgb;
+                palette.push(color);
+
+            }
+
+            function rgbToHex(red, green, blue) {
+
+                function deciToHex(rgb) {
+                    const BASE = 16;
+                    const ALPHABET = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
+
+                    let rightHex = rgb % BASE;
+
+                    let leftHex = (rgb - rightHex) / BASE;
+
+                    return ALPHABET[leftHex] + ALPHABET[rightHex];
+                }
+
+                return '#' + deciToHex(red) + deciToHex(green) + deciToHex(blue);
+
+            }
+
+            return palette;
+        }
+
+        function changeColors(color) {
+            divs.forEach(element => {
+                element.style.backgroundColor = color;
+            });
+        }
+
+        function pickColor() {
+            let index = Math.floor(Math.random() * colors.length);
+
+            return colors[index];
+        }
+
+        function playGame(level) {
+            document.querySelector("h1").style.backgroundColor = "steelblue";
+
+            var numSquares = (level === "easy") ? 3 : (level === "medium") ? 6 : 9;
+            localStorage.setItem("level", level);
+
+            colors = generateRandomColors(numSquares);
+            pickedColor = pickColor();
+            colorDisplay.textContent = (hexMode) ? pickedColor.hex : pickedColor.rgb;
+
+            message.textContent = " ";
+
+            divs = document.querySelectorAll(".square");
+            
+            let answer = pickedColor.rgb;
+
+            divs.forEach(element => {
+
+                //add event listeners  
+                element.onclick = function () {
+                    let color = this.style.backgroundColor;
+                    if (color === answer) {
+                        message.textContent = "That's it!";
+                        message.style.color = answer;
+                        changeColors(answer);
+                        document.querySelector("h1").style.backgroundColor = answer;
+
+                    } else {
+                        this.style.backgroundColor = "#232323";
+                        message.textContent = "Try again.";
+                        message.style.color = color;
+                    }
+
+                };
+            });
+        }
+
+
+
+
+        window.onload = function () {
+            playGame();
+
+            resetBtn.onclick = function () {
+                playGame();
+            }
+
+            easyBtn.onclick = function () {
+                this.classList.add("selected");
+                medBtn.classList.remove("selected");
+                hardBtn.classList.remove("selected");
+                playGame("easy");
+            };
+
+            medBtn.onclick = function () {
+                this.classList.add("selected");
+                easyBtn.classList.remove("selected");
+                hardBtn.classList.remove("selected");
+                playGame("medium");
+            };
+            hardBtn.onclick = function () {
+                this.classList.add("selected");
+                medBtn.classList.remove("selected");
+                easyBtn.classList.remove("selected");
+                playGame("hard");
+            };
+
+            hexBtn.onclick = function () {
+                colorDisplay.textContent = pickedColor.hex;
+                hexMode = true;
+                this.classList.add("selected");
+                rgbBtn.classList.remove("selected");
+            };
+
+            rgbBtn.onclick = function(){
+                colorDisplay.textContent = pickedColor.rgb;
+                hexMode = false;
+                this.classList.add("selected");
+                hexBtn.classList.remove("selected");
+            }
+        };
+    </script>
+</body>
+
+</html>
