@@ -25,7 +25,7 @@
     box-shadow: 5px 5px 10px var(--darkblue);
 }
 
-.project, .project img{
+.project, .project-img{
     border-radius: 5px;
 }
 .project a {
@@ -33,7 +33,7 @@
     color: var(--darkblue);
 }
 
-.project h3 {
+.project-header {
     color: var(--white);
     background: var(--blue);
     margin: 0;
@@ -43,7 +43,7 @@
     width: 100%;
 }
 
-.project img {
+.project-img{
     position: absolute;
     top: var(--project-img-top);
     left: var(--project-img-left);
@@ -61,7 +61,7 @@
     animation-fill-mode: forwards;
 }
 
-.desc p {
+.desc-paragraph{
     background: var(--darkblue);
     color: var(--white);
     opacity: 0.8;
