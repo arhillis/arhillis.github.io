@@ -15,7 +15,7 @@ body {
 nav {
     background: var(--darkblue);
     opacity: 0.8;
-    height: 50px;
+    height: 100px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -37,10 +37,7 @@ ul {
     padding: 0;
 }
 
-h1,
-h2,
-ul,
-article {
+.container{
     width: 80%;
     max-width: 980px;
     margin: auto;
@@ -51,6 +48,24 @@ header {
     color: var(--white);
     background-repeat: no-repeat;
     padding: 200px 0;
+}
+
+.header-text{
+    float: left;
+}
+
+#logo{
+    float: right;
+    border-radius: 50%;
+    border: 5px solid var(--darkblue);
+    width: 100px;
+    margin-top: 10px;
+}
+
+#nav-list{
+    float: left;
+    margin-top: 30px;
+    font-size: 1.25em;
 }
 
 nav li a {
@@ -80,7 +95,7 @@ main {
 
 article {
     margin: 20px auto;
-    padding: 75px 0;
+    padding: 125px 0;
 }
 
 p {
@@ -131,7 +146,7 @@ textarea {
     margin-bottom: 0;
 }
 
-#message textarea {
+#message-text{
     height: 150px;
 }
 
@@ -146,7 +161,7 @@ footer {
 }
 
 footer p {
-    color: #f8f8f8;
+    color: var(--white);
     padding-top: 75px;
     text-align: center;
 }

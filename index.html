@@ -13,7 +13,10 @@
 
 <body>
     <nav>
-        <ul>
+        <div class="container">
+            <img src="images/icons/logo.jpg" id="logo" alt="logo">
+        <ul id="nav-list">
+
             <li>
                 <a href="#home">Home</a>
             </li>
@@ -27,13 +30,19 @@
                 <a href="#contact">Contact</a>
             </li>
         </ul>
+        </div>
     </nav>
 
     <header id="home">
-        <h1>Andrielle Hillis</h1>
-        <h2>Front-End Developer</h2>
+        <div class="container">
+            <div class="header-text">
+                <h1>Andrielle Hillis</h1>
+                <h2>Front-End Developer</h2>
+            </div>
+            
+        </div>
     </header>
-    <main>
+    <main class="container">
         <article id="about">
             <h2>About Me</h2>
             <p>I attended the University of North Texas and graduated with a Bachelor of Arts degree (German major, Spanish
@@ -46,53 +55,53 @@
             <h2>My Work</h2>
             <section class="project">
                 <a href="http://lover-cosmetics.com/press/">
-                <h3>Lover Cosmetics</h3>
+                <h3 class="project-header">Lover Cosmetics</h3>
                   <div class="desc">
-                    <p>I used the Big Commerce platform to create a press page for a Kansas City based company, Lover Cosmetics.</p>
+                    <p class="desc-paragraph">I used the Big Commerce platform to create a press page for a Kansas City based company, Lover Cosmetics.</p>
                   </div>                  
                 </a>
               </section>
             <section class="project">
                 <a href="https://arhillis.github.io/Tribute-Page/">
-                <h3>Tribute Page</h3>
-                  <img src="images/projects/KingGeorge.jpg" alt="King George VI">
+                <h3 class="project-header">Tribute Page</h3>
+                  <img src="images/projects/KingGeorge.jpg" class="project-img" alt="King George VI">
                   <div class="desc">
-                    <p>This is the tribute to King George VI that I wrote for the Free Code Camp curriculum.</p>
+                    <p class="desc-paragraph">This is the tribute to King George VI that I wrote for the Free Code Camp curriculum.</p>
                   </div>                  
                 </a>
               </section>
               <section class="project">
                 <a href="quoteGenerator.html">
-                <h3>Random Quotes</h3>
-                  <img src="images/projects/quote-marks.png" alt="Quotation marks">
+                <h3 class="project-header">Random Quotes</h3>
+                  <img src="images/projects/quote-marks.png" class="project-img" alt="Quotation marks">
                   <div class="desc">
-                    <p>This is the Random Quote Generator that I wrote for the Free Code Camp curriculum.</p>
+                    <p class="desc-paragraph">This is the Random Quote Generator that I wrote for the Free Code Camp curriculum.</p>
                   </div>                  
                 </a>
               </section>
               <section class="project">
                 <a href="pixelArt.html">
-                <h3>Pixel Art Maker</h3>
-                  <img src="images/projects/grid.png" alt="Pixel Art">
+                <h3 class="project-header">Pixel Art Maker</h3>
+                  <img src="images/projects/grid.png" class="project-img" alt="Pixel Art">
                   <div class="desc">
-                    <p>This is the Pixel Art Maker I made for the Grow with Google Scholarship Course.</p>
+                    <p class="desc-paragraph">This is the Pixel Art Maker I made for the Grow with Google Scholarship Course.</p>
                   </div>                  
                 </a>
               </section>
               <section class="project">
                 <a href="moveMonster.html">
-                <h3>Move Monster</h3>
-                  <img src="images/projects/monster.png" alt="Monster">
+                <h3 class="project-header">Move Monster</h3>
+                  <img src="images/projects/monster.png" class="project-img" alt="Monster">
                   <div class="desc">
-                    <p>This is a game that I created after studying HTML5 Canvas</p>
+                    <p class="desc-paragraph">This is a game that I created after studying HTML5 Canvas</p>
                   </div>                  
                 </a>
               </section>
               <section class="project">
                 <a href="colorGame.html">
-                <h3>Color Game</h3>
+                <h3 class="project-header">Color Game</h3>
                   <div class="desc">
-                    <p>A color guessing game with three levels and two color modes.</p>
+                    <p class="desc-paragraph">A color guessing game with three levels and two color modes.</p>
                   </div>                  
                 </a>
               </section>
@@ -109,18 +118,17 @@
                     <input type="email" name="_replyto" placeholder="Email" required>
                 </p>
                 <p id="message">
-                    <textarea></textarea>
+                    <textarea id="message-text"></textarea>
                 </p>
                 <p id="submitBtn">
                     <input type="submit" value="Send">
                 </p>
             </form>
         </article>
+    </main>
         <footer>
             <p>Designed by Andrielle Hillis</p>
         </footer>
-
-    </main>
 </body>
 
 </html>
