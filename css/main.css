@@ -128,8 +128,8 @@ textarea {
     border-radius: 2px;
 }
 
-#contact form,
-#message textarea {
+#contact-form,
+#message-text {
     width: 300px;
 }
 
