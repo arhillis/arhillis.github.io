@@ -4,64 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="web developer designer Texarkana Bowie Northeast Texas">
-    <title>Andrielle Hillis- Front-End Developer</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/projects.css" media="screen">
 
+    <title>Over the Hillis</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
 </head>
 
 <body>
     <nav>
-        <div class="container">
-            <img src="images/icons/logo.jpg" id="logo" alt="logo">
-            <ul id="nav-list">
-
-                <li>
-                    <a href="#home">Home</a>
+        <div class="container nav-container">
+            <ul class="topnav" id="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
                 </li>
-                <li>
-                    <a href="#about">About</a>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
                 </li>
-                <li>
-                    <a href="#projects">Projects</a>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <img src="https://arhillis.github.io/images/icons/logo.jpg" class="logo on-edge" alt="logo">
         </div>
     </nav>
-
     <header id="home">
         <div class="container">
-            <div class="header-text">
-                <h1>Andrielle Hillis</h1>
-                <h2>Front-End Developer</h2>
-            </div>
-
+            <h1>Over the Hills</h1>
+            <h2>Web Development</h2>
         </div>
     </header>
-    <main class="container">
-        <article id="about">
+    <main class="container main">
+        <section id="about">
+            <img src="images/icons/profilePic.jpeg" alt="Pic of me" id="profile-pic">
             <h2>About Me</h2>
-            <p>I attended the University of North Texas and graduated with a Bachelor of Arts degree (German major, Spanish
-                minor), and about all it landed me was a cashiering job at Target. Not very exciting. So, I started to code
-                and develop web pages for about a year now. I know
-                <abbr title="Hypertext Markup Language">HTML</abbr>/
-                <abbr title="Cascading Stylesheets">CSS</abbr>, Processing JS, some Python, and a little bit of C#. I've recently started freelancing. </p>
-        </article>
-        <article id="projects">
+            <p>I'm a mom, a coder, a teacher, and freelancer. </p>
+            <p>What started out as just a hobby has now become my passion. I can create attractive and responsive websites,
+                tailored specifically to meet your needs. Below is a sample of my work. I've recently started freelancing.
+                </p>
+
+        </section>
+        <section id="projects">
             <h2>My Work</h2>
-            <section class="project">
+            <article class="project">
                 <a href="http://lover-cosmetics.com/press/">
                     <h3 class="project-header">Lover Cosmetics</h3>
                     <div class="desc">
                         <p class="desc-paragraph">I used the Big Commerce platform to create a press page for a Kansas City based company, Lover Cosmetics.</p>
                     </div>
                 </a>
-            </section>
-            <section class="project">
+            </article>
+            <article class="project">
                 <a href="https://arhillis.github.io/Tribute-Page/">
                     <h3 class="project-header">Tribute Page</h3>
                     <img src="images/projects/KingGeorge.jpg" class="project-img" alt="King George VI">
@@ -69,8 +63,8 @@
                         <p class="desc-paragraph">This is the tribute to King George VI that I wrote for the Free Code Camp curriculum.</p>
                     </div>
                 </a>
-            </section>
-            <section class="project">
+            </article>
+            <article class="project">
                 <a href="quoteGenerator.html">
                     <h3 class="project-header">Random Quotes</h3>
                     <img src="images/projects/quote-marks.png" class="project-img" alt="Quotation marks">
@@ -78,8 +72,8 @@
                         <p class="desc-paragraph">This is the Random Quote Generator that I wrote for the Free Code Camp curriculum.</p>
                     </div>
                 </a>
-            </section>
-            <section class="project">
+            </article>
+            <article class="project">
                 <a href="pixelArt.html">
                     <h3 class="project-header">Pixel Art Maker</h3>
                     <img src="images/projects/grid.png" class="project-img" alt="Pixel Art">
@@ -87,8 +81,8 @@
                         <p class="desc-paragraph">This is the Pixel Art Maker I made for the Grow with Google Scholarship Course.</p>
                     </div>
                 </a>
-            </section>
-            <section class="project">
+            </article>
+            <article class="project">
                 <a href="moveMonster.html">
                     <h3 class="project-header">Move Monster</h3>
                     <img src="images/projects/monster.png" class="project-img" alt="Monster">
@@ -96,39 +90,118 @@
                         <p class="desc-paragraph">This is a game that I created after studying HTML5 Canvas</p>
                     </div>
                 </a>
-            </section>
-            <section class="project">
+            </article>
+            <article class="project">
                 <a href="colorGame.html">
                     <h3 class="project-header">Color Game</h3>
                     <div class="desc">
                         <p class="desc-paragraph">A color guessing game with three levels and two color modes.</p>
                     </div>
                 </a>
-            </section>
+            </article>
+        </section>
+        <section id="contact">
+            <h2 class="section-head">Contact Me</h2>
+            <p class="info">You can email me directly by using this form.</p>
 
-        </article>
-        <article id="contact">
-            <h2>Contact Me</h2>
-            <p class="desc-contact">Feel free to contact me using the form on the left. You can also call me at (903) 219-2127.</p>
             <form id="contact-form" action="https://formspree.io/andriellerhillis@gmail.com" method="POST">
-                <p id="name">
-                    <input type="text" name="name" placeholder="Name" required>
-                </p>
-                <p id="email">
-                    <input type="email" name="_replyto" placeholder="Email" required>
-                </p>
-                <p id="message">
-                    <textarea id="message-text"></textarea>
-                </p>
-                <p id="submitBtn">
-                    <input type="submit" value="Send">
-                </p>
+
+                <label for="name" id="name-label" class="label">Name</label>
+                <input type="text" id="name" placeholder="Name" class="input" required>
+
+                <label for="email" id="email-label" class="label">Email</label>
+                <input type="email" id="email" name="email" class="input" placeholder="Email" required>
+
+                <label for="dropdown" class="label">Budget</label>
+                <select id="dropdown">
+                    <option>Less than $50</option>
+                    <option>$50 to $100</option>
+                    <option>$100 to $200</option>
+                    <option>$300 to $500</option>
+                    <option>$500 to $1000</option>
+                    <option>More than $1000</option>
+                </select>
+
+                <label class="label">Type of Organiztion</label>
+                <span class="radio input">
+                    <input type="radio" name="organization" value="gov">Government
+                </span>
+                <span class="radio input">
+                    <input type="radio" name="organization" value="relig">Religious
+                </span>
+                <span class="radio input">
+                    <input type="radio" name="organization" value="non-prof">Non-Profit
+                </span>
+                <span class="radio input">
+                    <input type="radio" name="organization" value="corp">Private Company
+                </span>
+
+                <label class="label">Services Needed:</label>
+                <br>
+                <span class="checkbox input">
+                    <input type="checkbox" name="services" value="RespDesgn">Responsive Design
+                </span>
+                <span class="checkbox input">
+                    <input type="checkbox" name="services" value="JSAlgsDS">Contact Form
+                </span>
+                <span class="checkbox input">
+                    <input type="checkbox" name="certs" value="FrntEndLibs">Image Optimization
+                </span>
+                <span class="checkbox input">
+                    <input type="checkbox" name="certs" value="DataVis">Data Visualization
+                </span>
+                <span class="checkbox input">
+                    <input type="checkbox" name="certs" value="APIs">APIs and Microservices
+                </span>
+                <span class="checkbox input">
+                    <input type="checkbox" name="certs" value="IS&QU">Information Security and Quality Assurance
+                </span>
+
+                <textarea class="input" placeholder="Further comments..."></textarea>
+
+                <input type="submit" id="submit" class="input" value="Submit">
             </form>
-        </article>
+            <aside class="social-media">
+                <p>I can also be found on:</p>
+                <ul id="social-media-list">
+                    <li>
+                        <a href="https://www.linkedin.com/in/andrielle-r-hillis/" class="social-media-link">
+                            <img src="images/icons/linkedin-sm.png" alt="Link Logo" class="social-media-icon">
+                            <span class="social-media-label">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/arhillis" class="social-media-link">
+                            <img src="images/icons/twitter-sm.png" alt="Twitter Logo" class="social-media-icon">
+                            <span class="social-media-label">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@arhillis" class="social-media-link">
+                            <img src="images/icons/medium-sm.png" alt="Medium Logo" class="social-media-icon">
+                            <span class="social-media-label">Medium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.upwork.com/freelancers/~01ce41b31744be35ea" class="social-media-link">
+                            <img src="images/icons/upwork-sm.png" alt="UpWork Logo" class="social-media-icon">
+                            <span class="social-media-label">UpWork</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/109043758950904996114" class="social-media-link">
+                            <img src="images/icons/google+-darkBlue-sm.png" alt="Google Plus Logo" class="social-media-icon">
+                            <span class="social-media-label">Google Plus</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
     </main>
     <footer>
-        <p>Designed by Andrielle Hillis</p>
+
     </footer>
+    <script src="JavaScript/nav.js"></script>
 </body>
 
 </html>
