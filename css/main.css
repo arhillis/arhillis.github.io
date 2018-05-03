@@ -129,16 +129,7 @@ section {
 
 /*********************PROJECT SECTION******************************/
 
-:root {
-    --project-width: 250px;
-    --project-img-width-var: calc(var(--project-width) / 2);
-    --project-img-width: var(--project-img-width-var);
-    --project-img-left-var: calc(var(--project-width) / 4);
-    --project-img-left: var(--project-img-left-var);
-    --project-height: 250px;
-    --project-img-top-var: calc(var(--project-height) / 3.3);
-    --project-img-top: var(--project-img-top-var);
-}
+
 
 #projects {
     display: flex;
@@ -147,8 +138,8 @@ section {
 }
 
 .project {
-    width: var(--project-width);
-    height: var(--project-height);
+    width: 250px;
+    height: 250px;
     margin-bottom: 50px;
     overflow: hidden;
     border: 5px solid #5B85AA;
@@ -174,9 +165,9 @@ section {
 
 .project-img {
     position: absolute;
-    top: var(--project-img-top);
-    left: var(--project-img-left);
-    width: var(--project-img-width);
+    top: 83.333px;
+    left: 60px;
+    width: 125px;
     z-index: -1;
 }
 
@@ -259,7 +250,7 @@ section {
 }
 
 .social-media-link:hover {
-    background: #FBFBFB;
+    background: #E0DDCF;
 }
 
 .social-media-icon {
