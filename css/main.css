@@ -1,17 +1,17 @@
-:root {
+/*:root {
     --darkest: #172A3A;
     --darker: #173753;
     --medium: #5B85AA;
     --light: #E0DDCF;
     --lightest: #FBFBFB;
-}
+}*/
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--lightest);
-    color: var(--darkest);
+    background: #FBFBFB;
+    color: #172A3A;
 }
 
 html,
@@ -37,7 +37,7 @@ a {
     color: unset;
 }
 
-section h2{
+section h2 {
     width: 100%;
 }
 
@@ -48,12 +48,13 @@ section h2{
 }
 
 /********************** NAVIGATION *****************************/
+
 nav {
     width: 300px;
     height: 100%;
     top: 0;
-    background: var(--darker);
-    color: var(--lightest);
+    background: #173753;
+    color: #FBFBFB;
     opacity: 0.95;
     z-index: 3;
     position: fixed;
@@ -74,8 +75,8 @@ nav {
     border-radius: 5px;
 }
 
-.nav-item:hover{
-    background: var(--darkest);
+.nav-item:hover {
+    background: #172A3A;
 }
 
 .open {
@@ -102,8 +103,8 @@ nav {
 
 #home {
     padding: 150px 0 50px 0;
-    color: var(--lightest);
-    background: var(--medium);
+    color: #FBFBFB;
+    background: #5B85AA;
     font-size: 1.75em;
 }
 
@@ -121,7 +122,6 @@ section {
 }
 
 #profile-pic {
-    float: right;
     border-radius: 50%;
     width: 25%;
     margin: 25px 0 10px 5%;
@@ -140,7 +140,7 @@ section {
     --project-img-top: var(--project-img-top-var);
 }
 
-#projects{
+#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -151,19 +151,20 @@ section {
     height: var(--project-height);
     margin-bottom: 50px;
     overflow: hidden;
-    border: 5px solid var(--medium);
+    border: 5px solid #5B85AA;
     padding: 0;
     position: relative;
-    box-shadow: 5px 5px 10px var(--darkest);
+    box-shadow: 5px 5px 10px #172A3A;
 }
 
-.project, .project-img{
+.project,
+.project-img {
     border-radius: 5px;
 }
 
 .project-header {
-    color: var(--lightest);
-    background: var(--medium);
+    color: #FBFBFB;
+    background: #5B85AA;
     margin: 0;
     text-align: center;
     padding: 15px 0;
@@ -171,7 +172,7 @@ section {
     width: 100%;
 }
 
-.project-img{
+.project-img {
     position: absolute;
     top: var(--project-img-top);
     left: var(--project-img-left);
@@ -189,9 +190,9 @@ section {
     animation-fill-mode: forwards;
 }
 
-.desc-paragraph{
-    background: var(--darkest);
-    color: var(--lightest);
+.desc-paragraph {
+    background: #172A3A;
+    color: #FBFBFB;
     opacity: 0.8;
     padding: 15px;
     padding-top: 30px;
@@ -241,7 +242,6 @@ section {
     }
 }
 
-
 /****************** SOCIAL MEDIA **********************************/
 
 #social-media-list {
@@ -259,7 +259,7 @@ section {
 }
 
 .social-media-link:hover {
-    background: var(--light);
+    background: #FBFBFB;
 }
 
 .social-media-icon {
@@ -274,72 +274,72 @@ section {
 
 /*************************** CONTACT FORM ************************/
 
-#contact{
- display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr;
- grid-column-gap: 10px;
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
 }
 
-#contact .section-head, .info{
+#contact .section-head,
+.info {
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-#contact-form{    
+#contact-form {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
 }
 
-aside{
+aside {
     grid-column-start: 4;
     grid-column-end: 5;
 }
 
-#contact-form{
+#contact-form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 10px;
     grid-row-gap: 10px;
 }
 
-.label{
+.label {
     grid-column-start: 1;
 }
 
-.input, #dropdown, textarea{
+.input,
+#dropdown,
+textarea {
     grid-column-start: 2;
     border-radius: 5px;
 }
 
-textarea{
+textarea {
     resize: none;
 }
 
-footer{
-    background: var(--darker);
+footer {
+    background: #173753;
+    color: #FBFBFB;
     height: 100px;
     margin-top: 50px;
 }
 
 /************************** MEDIA QUERIES *************************/
 
-
 @media screen and (min-width: 1000px) {
     nav {
         position: fixed;
-        -webdit-transform: translate(0, 0);
         transform: translate(0, 0);
         top: 0;
         width: 100%;
         height: 100px;
     }
-
-    #nav-list{
+    #nav-list {
         margin: 0;
         padding-left: 0;
     }
-
     .nav-item {
         float: left;
         padding: 40px;
@@ -347,7 +347,6 @@ footer{
         height: 20px;
         border-radius: 0;
     }
-
     .logo {
         transform: translate(170px, 10px);
         width: 75px;
@@ -356,36 +355,31 @@ footer{
 }
 
 @media screen and (max-width: 665px) {
-    h2{
+    h2 {
         font-size: 1.5em;
     }
     #profile-pic {
         width: 35%;
     }
-
-    #projects{
+    #projects {
         justify-content: center;
     }
-
-    #contact{
+    #contact {
         display: block;
     }
-
-    #contact-form{
+    #contact-form {
         width: 100%;
     }
-
-    #social-media-list{
+    #social-media-list {
         margin-left: 150px;
     }
-
 }
 
-@media screen and (max-width: 450px){
-    #home{
+@media screen and (max-width: 450px) {
+    #home {
         font-size: 1.5em;
     }
-    #social-media-list{
+    #social-media-list {
         margin-left: 15%;
     }
 }
