@@ -49,19 +49,19 @@ section h2 {
 
 /********************** NAVIGATION *****************************/
 
-nav{
+nav {
     background: #172A3A;
     z-index: 3;
     position: fixed;
     width: 100%;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav a{
+nav a {
     /*text-align: center;*/
     text-decoration: none;
     color: #FBFBFB;
@@ -69,11 +69,11 @@ nav a{
     padding: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     background: #5B85AA;
 }
 
-#logo{
+#logo {
     width: 50px;
     border-radius: 50%;
 }
@@ -330,7 +330,7 @@ footer {
 
 @media screen and (min-width: 768px){
     
-    nav ul{
+    nav ul {
         display: flex;
         justify-content: space-between;
     }
@@ -339,17 +339,17 @@ footer {
         flex-basis: 100px;
     }
 
-    .nav-item{
+    .nav-item {
         align-self: flex-end;
     }
     
-    .logo-li{
+    .logo-li {
         order: 5;
     }
 }
 
 @media screen and (max-width: 768px){
-    nav{        
+    nav {        
         opacity: 0.8;
     }
     nav ul {
