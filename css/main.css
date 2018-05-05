@@ -56,9 +56,19 @@ nav {
     width: 100%;
 }
 
-nav ul {
+.nav-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list{
     list-style-type: none;
-    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nav-item{
+    min-height: 50px;
 }
 
 nav a {
@@ -66,7 +76,7 @@ nav a {
     text-decoration: none;
     color: #FBFBFB;
     display: block;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav a:hover {
@@ -74,7 +84,9 @@ nav a:hover {
 }
 
 #logo {
-    width: 50px;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
     border-radius: 50%;
 }
 
@@ -359,8 +371,14 @@ footer {
     ul.container {
         padding: 0;
     }
+
+    .nav-container{
+        padding: 0;
+    }
+
     .hidden {
         font-size: 0.2px;
+        min-height: 0;
         height: 0.5px;
         transition: all .3s ease;
         text-align: center;
@@ -375,9 +393,6 @@ footer {
 
     #logo{
         margin: 10px;
-    }
-
-    .logo{
         order: -1;
     }
 }
