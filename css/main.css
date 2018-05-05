@@ -103,18 +103,28 @@ nav a:hover {
     margin-top: 100px;
 }
 
+.flex-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section {
-    clear: both;
+
     padding-top: 100px;
 }
 
+
 .section-head {
-    min-width: 100%;
+    flex-basis: 100%;
 }
 
+.section-text {
+    flex-basis: 65%;
+    margin-left: 5%;
+}
 #profile-pic {
     border-radius: 50%;
-    width: 25%;
+    flex-basis: 25%;
     margin: 25px 0 10px 5%;
 }
 
@@ -123,8 +133,6 @@ section {
 
 
 #projects {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -315,7 +323,11 @@ footer {
         font-size: 1.5em;
     }
     #profile-pic {
-        width: 35%;
+        flex-basis: 35%;
+    }
+
+    .section-text {
+        flex-basis: 100%;
     }
     #projects {
         justify-content: center;
@@ -358,6 +370,7 @@ footer {
     .logo-li {
         order: 5;
     }
+
 }
 
 @media screen and (max-width: 768px){
@@ -391,8 +404,23 @@ footer {
         transition: all 0.5s ease;
     }
 
-    #logo{
+    #logo {
         margin: 10px;
         order: -1;
     }
+}
+
+@media screen and (min-width: 1000px){
+    .flex-section {
+        justify-content: space-between;
+    }
+
+    .section-text {
+        margin-left: 0;
+    }
+    #profile-pic {
+        order: 2;
+        flex-basis: 15%;
+    }
+
 }
