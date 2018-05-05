@@ -339,7 +339,11 @@ footer {
         flex-basis: 100px;
     }
 
-    #logo{
+    .nav-item{
+        align-self: flex-end;
+    }
+    
+    .logo-li{
         order: 5;
     }
 }
@@ -371,5 +375,9 @@ footer {
 
     #logo{
         margin: 10px;
+    }
+
+    .logo{
+        order: -1;
     }
 }
