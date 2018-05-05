@@ -10,25 +10,28 @@
 </head>
 
 <body>
+
+    <!-- The responsive, flexbox navigation was partially taken from a tutorial on YouTube (https://www.youtube.com/watch?v=Y8zMYaD1bz0&list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG). However, the animation is my own. No plagaurism is intended. -->
     <nav>
-        <div class="container nav-container">
-            <ul class="topnav" id="nav-list">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <img src="https://arhillis.github.io/images/icons/logo.jpg" class="logo on-edge" alt="logo">
-        </div>
+        <ul class="container">
+            <li>
+                <img src="https://arhillis.github.io/images/icons/logo.jpg" id="logo" alt="logo">
+            </li>
+            <li class="hidden nav-item">
+                <a href="#home">Home</a>
+            </li>
+            <li class="hidden nav-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="hidden nav-item">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="hidden nav-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </nav>
+
     <header id="home">
         <div class="container">
             <h1>Over the Hills</h1>
@@ -40,7 +43,8 @@
             <h2>About Me</h2>
             <img src="images/icons/profilePic.jpeg" alt="Pic of me" id="profile-pic">
             <p>My name is Andrielle Hillis. I'm a mom, a coder, a teacher, and freelancer. </p>
-            <p>What started out as just a hobby has now become my passion. I can create attractive and responsive websites, tailored specifically to meet your needs. Below is a sample of my work. I've recently started freelancing.</p>
+            <p>What started out as just a hobby has now become my passion. I can create attractive and responsive websites,
+                tailored specifically to meet your needs. Below is a sample of my work. I've recently started freelancing.</p>
 
         </section>
         <section id="projects">
@@ -217,9 +221,19 @@
         -->
         <div class="container">
             If you like what you see, you can:
-                <ul>
-                    <li>Follow me on <img src="images/icons/twitter-sm-light.png" alt="Twitter icon">Twitter</li>
-                </ul>
+            <ul>
+                <li>Follow me on
+                    <img src="images/icons/twitter-sm-light.png" alt="Twitter icon">Twitter</li>
+            </ul>
+
+
+
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                </a>
+            </p>
+
         </div>
     </footer>
     <script src="JavaScript/nav.js"></script>

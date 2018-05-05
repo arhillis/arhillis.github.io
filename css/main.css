@@ -49,54 +49,33 @@ section h2 {
 
 /********************** NAVIGATION *****************************/
 
-nav {
-    width: 300px;
-    height: 100%;
-    top: 0;
-    background: #173753;
-    color: #FBFBFB;
-    opacity: 0.95;
+nav{
+    background: #172A3A;
     z-index: 3;
     position: fixed;
-    transform: translate(-300px, 0);
-    transition: transform 0.3s ease;
+    width: 100%;
 }
 
-#nav-list {
+nav ul{
     list-style-type: none;
-    margin-top: 100px;
+    padding: 0;
 }
 
-.nav-item {
-    font-size: 1.5em;
-    margin-bottom: 25px;
+nav a{
+    /*text-align: center;*/
+    text-decoration: none;
+    color: #FBFBFB;
+    display: block;
     padding: 10px;
-    width: 100px;
-    border-radius: 5px;
 }
 
-.nav-item:hover {
-    background: #172A3A;
+nav a:hover{
+    background: #5B85AA;
 }
 
-.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-.logo {
-    position: sticky;
-    transform: translate(180px, -380px);
-    transition: transform 0.3s ease;
+#logo{
     width: 50px;
-    height: 50px;
     border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(50, 50, 150, 0.6);
-}
-
-.on-edge {
-    transform: translate(285px, -380px);
-    transition: transform 0.3s ease;
 }
 
 /********************* HEADER AND MAIN CONTENT ****************/
@@ -319,32 +298,6 @@ footer {
 
 /************************** MEDIA QUERIES *************************/
 
-@media screen and (min-width: 1000px) {
-    nav {
-        position: fixed;
-        transform: translate(0, 0);
-        top: 0;
-        width: 100%;
-        height: 100px;
-    }
-    #nav-list {
-        margin: 0;
-        padding-left: 0;
-    }
-    .nav-item {
-        float: left;
-        padding: 40px;
-        font-size: 1.5em;
-        height: 20px;
-        border-radius: 0;
-    }
-    .logo {
-        transform: translate(170px, 10px);
-        width: 75px;
-        height: 75px;
-    }
-}
-
 @media screen and (max-width: 665px) {
     h2 {
         font-size: 1.5em;
@@ -372,5 +325,51 @@ footer {
     }
     #social-media-list {
         margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li {
+        flex-basis: 100px;
+    }
+
+    #logo{
+        order: 5;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{        
+        opacity: 0.8;
+    }
+    nav ul {
+        width: 100%;
+    }
+
+    ul.container {
+        padding: 0;
+    }
+    .hidden {
+        font-size: 0.2px;
+        height: 0.5px;
+        transition: all .3s ease;
+        text-align: center;
+    }
+
+    .shown {
+        font-size: 16px;
+        height: 45px;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    #logo{
+        margin: 10px;
     }
 }

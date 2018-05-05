@@ -1,7 +1,17 @@
 const nav = document.querySelector("nav");
-const logo = document.querySelector(".logo");
+const links = document.querySelectorAll(".nav-item");
 
-logo.onclick = function(){
-  nav.classList.toggle("open");
-  this.classList.toggle("on-edge");
+nav.onclick = function (event) {
+  links.forEach(function (link) {
+    link.classList.toggle("hidden");
+    link.classList.toggle("shown");
+  })
+};
+
+nav.onfocusout = function(){
+  console.log("hide me!");
+  links.forEach(function(link){
+    link.classList.remove("shown");
+    link.classList.add("hidden");
+  })
 };
