@@ -56,18 +56,18 @@ nav {
     width: 100%;
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.nav-list{
+.nav-list {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-.nav-item{
+.nav-item {
     min-height: 50px;
 }
 
@@ -103,7 +103,7 @@ nav a:hover {
     margin-top: 100px;
 }
 
-.flex-section{
+.flex-section {
     display: flex;
     flex-wrap: wrap;
 }
@@ -309,11 +309,21 @@ textarea {
     resize: none;
 }
 
+/***************** FOOTER *********************/
+
 footer {
     background: #173753;
     color: #FBFBFB;
-    height: 100px;
     margin-top: 50px;
+    padding: 20px;
+}
+
+.footer-icon {
+    width: 15px;
+}
+
+footer .flex-section{
+    justify-content: space-between;
 }
 
 /************************** MEDIA QUERIES *************************/
@@ -347,6 +357,7 @@ footer {
     #home {
         font-size: 1.5em;
     }
+
     #social-media-list {
         margin-left: 15%;
     }
@@ -418,6 +429,7 @@ footer {
     .section-text {
         margin-left: 0;
     }
+
     #profile-pic {
         order: 2;
         flex-basis: 15%;
