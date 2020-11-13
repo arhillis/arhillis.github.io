@@ -16,6 +16,7 @@ $box-size: 50px;
 $box-margin: 10px;
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
 }
 
 nav {
@@ -28,6 +29,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     .nav-item {
         padding: 2.5rem;
     }
@@ -82,4 +84,41 @@ nav,
 .box,
 .stripe {
     transition: 1s all;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1507720708252-1ddeb1dbff34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') no-repeat center;
+    background-size: cover;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        //background-color: rgba(120, 101, 133, 0.63);
+    }
+}
+
+h1 {
+    font-size: 7.5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h1,
+h2 {
+    line-height: 0.9;
+    position: relative;
+    color: #fff;
 }
