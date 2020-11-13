@@ -129,15 +129,74 @@ q:after {
 }
 
 /* SCSS HSL */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 nav {
+  background: rgba(51, 101, 138, 0.98);
   position: fixed;
+  left: -300px;
   height: 100vh;
   min-width: 300px;
-  background: #2f4858ff;
   color: #f7eddeff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+nav .nav-item {
+  padding: 2.5rem;
+}
+nav li a {
+  color: #f7eddeff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav .box {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .box .stripe {
+  width: 30px;
+  height: 3px;
+  background: #a3cbe1ff;
+}
+nav .box.close {
+  background: #a3cbe1ff;
+  left: 240px;
+}
+nav .box.close .stripe:first-child,
+nav .box.close .stripe:last-child {
+  background: #f7eddeff;
+  transform-origin: center;
+  width: 40px;
+  height: 3px;
+}
+nav .box.close .stripe:first-child {
+  transform: rotate(45deg) translate(7px, 5px);
+}
+nav .box.close .stripe:last-child {
+  transform: rotate(-45deg) translate(7px, -5px);
+}
+nav .box.close .stripe:nth-child(2) {
+  display: none;
+}
+nav.close {
+  left: 0;
+}
+
+nav,
+.box,
+.stripe {
+  transition: 1s all;
 }
 
 /*# sourceMappingURL=main.css.map */
