@@ -1,4 +1,5 @@
 @use 'reset';
+@use 'colors';
 
 /* SCSS HSL */
 
@@ -14,6 +15,10 @@ $red-salsa: #fb3640ff;
 $nav-min-width: 300px;
 $box-size: 50px;
 $box-margin: 10px;
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
@@ -23,7 +28,7 @@ nav {
     @include opacity($queen-blue, 0.98);
     position: fixed;
     left: -300px;
-    height: 100vh;
+    height: 100%;
     min-width: $nav-min-width;
     color: $old-lace;
     display: flex;
@@ -88,7 +93,6 @@ nav,
 
 header {
     position: relative;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -103,17 +107,18 @@ header {
         right: 0px;
         bottom: 0px;
         left: 0px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.9);
         //background-color: rgba(120, 101, 133, 0.63);
     }
 }
 
-h1 {
-    font-size: 7.5rem;
+header,
+section {
+    height: 100vh;
 }
 
-h2 {
-    font-size: 4rem;
+h1 {
+    font-size: 2.5rem;
 }
 
 h1,
@@ -121,4 +126,74 @@ h2 {
     line-height: 0.9;
     position: relative;
     color: #fff;
+}
+
+section h2 {
+    color: $charcoal;
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+#about img {
+    min-width: 200px;
+    min-height: 200px;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+#about .section-text {
+    max-width: 500px;
+    box-sizing: border-box;
+    padding-left: 2rem;
+}
+
+#about ul {
+    list-style-type: disc;
+    margin-left: 10%;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.project {
+    width: 200px;
+    img {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 668px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    section h2 {
+        padding-top: 10vh;
+    }
+}
+
+@media screen and (min-width: 1312px) {
+    h1 {
+        font-size: 6.5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
 }
