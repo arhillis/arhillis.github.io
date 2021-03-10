@@ -1,0 +1,22 @@
+header,
+section {
+    border: solid black 1px;
+}
+
+section,
+footer {
+    height: 500px;
+}
+
+section {
+    background: white;
+}
+
+header {
+    background: #1c1d25;
+    height: 100vh;
+}
+
+footer {
+    background: black;
+}
