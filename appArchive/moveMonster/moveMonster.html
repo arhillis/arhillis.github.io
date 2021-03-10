@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Monster Program with HTML5 Canvas</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+       #myCanvas, button{
+            border: 3px solid #3F7883;
+        }
+        #monster, button{            
+            color: #3F7883;
+        }
+        #monster{
+            margin: 5px auto;
+            width: 500px;
+            border: 5px solid #3F7883;
+        }
+
+        #monster h1{
+            text-align: center;
+            background: #3F7883;
+            color: #F8F8F8;
+            margin-top: 0;
+        }
+        #monster p{
+            padding: 15px;
+        }
+        #myCanvas{
+            border: 3px solid #3F7883;
+            background-color: #DFDFDF;
+            margin: 5px 50px;
+        }
+        button{
+            margin: 5px;
+            width: 65px;
+            height: 30px;
+        }
+        #btnGroup{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="monster">
+        <h1>My Monster</h1>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+        <div id="btnGroup">
+            <button onmousedown="monster1.move(38);">Up</button>
+            <button onmousedown="monster1.move(37);">Left</button>
+            <button onmousedown="monster1.move(32);">Spin</button>
+            <button onmousedown="monster1.move(39);">Right</button>            
+            <button onmousedown="monster1.move(40);">Down</button>
+        </div>
+        <p>Use the arrows on your keyboard or click on the canvas to move the monster around. Use the space bar to rotate the monster. You can also use the plus and minus keys to resize the monster.</p>
+
+        <p>Note: for best results, make sure the entire canvas is visible on your browser.</p>
+    </div>
+	<script type="text/javascript" src="JavaScript/moveMonster.js"></script>
+</body>
+</html>
