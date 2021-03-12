@@ -2,11 +2,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header,
-section {
-    border: solid black 1px;
-}
-
 section,
 footer {
     height: 500px;
@@ -64,6 +59,16 @@ nav ul li {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    background: coral;
+    color: white;
+}
+
+button:hover {
+    background: #ef744b;
+}
+
 
 /* ***************************************** HEADER *************************************** */
 
@@ -86,18 +91,12 @@ header {
 }
 
 .header-text button {
-    border: none;
     width: 200px;
     height: 60px;
-    border-radius: 30px;
-    background: coral;
+    border-radius: 40px;
     font-size: 20px;
     font-weight: 300;
     margin-top: 20px;
-}
-
-.header-text button:hover {
-    background: #ef744b;
 }
 
 .header-text button:active {
@@ -131,6 +130,9 @@ header {
     opacity: 1;
 }
 
+
+/* MAIN */
+
 .section {
     display: flex;
     justify-content: space-around;
@@ -140,6 +142,7 @@ header {
 .section h2 {
     font-size: 40px;
     font-weight: 600;
+    padding-bottom: 60px;
 }
 
 .info {
@@ -153,4 +156,51 @@ header {
 
 .headshot footer {
     background: black;
+}
+
+#projects {
+    flex-direction: column;
+}
+
+.project-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px lightgrey;
+    margin: 20px;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    /* border-radius: 50%; */
+}
+
+.project-card h3 {
+    font-size: 25px;
+    padding: 15px;
+}
+
+.project-card p {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.project-card hr {
+    width: 90%;
+    margin: auto;
+}
+
+.project-card button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 20px;
 }
