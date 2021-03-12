@@ -131,6 +131,26 @@ header {
     opacity: 1;
 }
 
-footer {
+.section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.section h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.info {
+    padding: 5% 0;
+}
+
+.headshot img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.headshot footer {
     background: black;
 }
