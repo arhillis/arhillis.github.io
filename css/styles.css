@@ -36,6 +36,9 @@ a {
     color: inherit;
 }
 
+
+/* ************** NAVBAR *********************** */
+
 nav {
     justify-content: space-between;
     position: fixed;
@@ -48,13 +51,13 @@ nav img {
     margin: 10px 80px;
 }
 
-nav ul {
+.nav-list {
     justify-content: flex-end;
     padding: 10px 5px;
     font-size: 30px;
 }
 
-nav ul li {
+.nav-list li {
     width: 200px;
     text-decoration: none;
 }
@@ -67,6 +70,10 @@ button {
 
 button:hover {
     background: #ef744b;
+}
+
+button.hamburger {
+    display: none;
 }
 
 
@@ -216,4 +223,22 @@ footer {
 
 footer .socials {
     flex-direction: row;
+}
+
+@media screen and (max-width: 960px) {
+    button.hamburger {
+        display: block;
+        background: transparent;
+        font-size: 24px;
+        color: coral;
+        padding: 0;
+        margin-right: 10px;
+    }
+    button.hamburger,
+    button.hambuger:active {
+        border: none;
+    }
+    .nav-list {
+        display: none;
+    }
 }
