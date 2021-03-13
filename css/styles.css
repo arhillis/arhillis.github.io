@@ -2,7 +2,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-section,
 footer {
     height: 500px;
 }
@@ -34,6 +33,11 @@ header,
 .header-text,
 .socials {
     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 nav {
@@ -136,7 +140,8 @@ header {
 .section {
     display: flex;
     justify-content: space-around;
-    padding: 80px;
+    padding: 160px 80px;
+    min-height: 100vh;
 }
 
 .section h2 {
@@ -145,9 +150,10 @@ header {
     padding-bottom: 60px;
 }
 
-.info {
+
+/* .info {
     padding: 5% 0;
-}
+} */
 
 .headshot img {
     width: 300px;
