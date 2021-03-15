@@ -1,5 +1,8 @@
-# Welcome to My Site!
+# My Todo List
 
-This is the repository for my portfolio website. If you have any ideas on how I might improve the site, don't hesitate to let me know in the form of a pull request.
-
-Right now, I am in the process of revamping this portfolio to follow Udacity's Front-End Wed Development Nanodegree Portfolio rubric.
+* Change the font size on the nav list
+* Redo the logo
+* Add a background image on the header
+* Change the social media icons to Font Awesome icons
+* CSS Variables
+* Contact form in the footer
