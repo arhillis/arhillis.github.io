@@ -1,11 +1,6 @@
 window.onload = function(){
-    // const nav = document.querySelector('nav');
-    // const box = document.querySelector('.box');
+    const hamburgerBtn = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
 
-    // box.onclick = function(){
-    //     nav.classList.toggle('close');
-    //     box.classList.toggle('close');
-    // }
-
-    console.log('hELLO WORLD');
+    hamburgerBtn.addEventListener('click', () => navList.classList.toggle('show'));
 }

@@ -36,12 +36,17 @@ a {
     color: inherit;
 }
 
+button:focus {
+    outline: 0;
+}
+
 
 /* ************** NAVBAR *********************** */
 
 nav {
     justify-content: space-between;
     position: fixed;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -53,13 +58,15 @@ nav img {
 
 .nav-list {
     justify-content: flex-end;
+    align-items: center;
     padding: 10px 5px;
-    font-size: 30px;
 }
 
 .nav-list li {
-    width: 200px;
     text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
 }
 
 button {
@@ -153,11 +160,6 @@ header {
     padding-bottom: 60px;
 }
 
-
-/* .info {
-    padding: 5% 0;
-} */
-
 .headshot img {
     width: 300px;
     border-radius: 50%;
@@ -240,5 +242,13 @@ footer .socials {
     }
     .nav-list {
         display: none;
+    }
+    .nav-list.show {
+        display: block;
+        order: 3;
+        width: 100%;
+    }
+    .nav-list li {
+        text-align: right;
     }
 }
