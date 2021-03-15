@@ -40,6 +40,18 @@ button:focus {
     outline: 0;
 }
 
+.fab,
+.fas {
+    color: coral;
+    font-size: 32px;
+    transition: 1s;
+}
+
+.fab:hover,
+.fas:hover {
+    color: white;
+}
+
 
 /* ************** NAVBAR *********************** */
 
@@ -121,7 +133,7 @@ header {
 .socials {
     justify-content: center;
     padding-bottom: 50px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .socials a {
@@ -227,12 +239,14 @@ footer .socials {
     flex-direction: row;
 }
 
+footer .socials a {
+    padding: 8px;
+}
+
 @media screen and (max-width: 960px) {
     button.hamburger {
         display: block;
         background: transparent;
-        font-size: 24px;
-        color: coral;
         padding: 0;
         margin-right: 10px;
     }
