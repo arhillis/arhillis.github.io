@@ -1,3 +1,11 @@
+:root {
+    --accent: coral;
+    --accent-hover: #ef744b;
+    --x-dark: #1c1d25;
+    --main-txt-color: black;
+    --alt-text-color: white;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -8,13 +16,15 @@ section {
 
 nav,
 header,
-.header-text button {
-    color: white;
+.header-text button,
+.fab:hover,
+.fas:hover {
+    color: var(--alt-text-color);
 }
 
 nav,
 header {
-    background: #1c1d25;
+    background: var(--x-dark);
     font-size: 40px;
 }
 
@@ -42,14 +52,9 @@ button:focus {
 
 .fab,
 .fas {
-    color: coral;
+    color: var(--accent);
     font-size: 32px;
-    transition: 1s;
-}
-
-.fab:hover,
-.fas:hover {
-    color: white;
+    transition: 0.5s;
 }
 
 
@@ -83,12 +88,17 @@ nav img {
 
 button {
     border: none;
-    background: coral;
+    background: var(--accent);
     color: white;
 }
 
 button:hover {
-    background: #ef744b;
+    background: var(--accent-hover);
+}
+
+button:active {
+    background: #A9A9A9;
+    color: #808080;
 }
 
 button.hamburger {
@@ -127,7 +137,7 @@ header {
 
 .header-text button:active {
     background: darkgrey;
-    color: #1c1d25;
+    color: var(--x-dark);
 }
 
 .socials {
@@ -175,10 +185,6 @@ header {
 .headshot img {
     width: 300px;
     border-radius: 50%;
-}
-
-.headshot footer {
-    background: black;
 }
 
 #projects {
@@ -229,8 +235,8 @@ header {
 }
 
 footer {
-    background: #1c1d25;
-    color: white;
+    background: var(--x-dark);
+    color: var(--alt-text-color);
     text-align: center;
     padding: 160px;
 }
