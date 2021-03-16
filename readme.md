@@ -3,6 +3,7 @@
 * Change the font size on the nav list
 * Redo the logo
 * Add a background image on the header
-* Change the social media icons to Font Awesome icons
 * CSS Variables
 * Contact form in the footer
+* Change the font size from px to rem
+* Write descriptions for projects and the about section
