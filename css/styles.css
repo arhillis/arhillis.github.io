@@ -135,11 +135,6 @@ header {
     margin-top: 20px;
 }
 
-.header-text button:active {
-    background: darkgrey;
-    color: var(--x-dark);
-}
-
 .socials {
     justify-content: center;
     padding-bottom: 50px;
@@ -151,19 +146,6 @@ header {
     grid-template-rows: 24px 1fr;
     grid-template-columns: 24px 1fr;
     grid-row-gap: 12px;
-}
-
-.socials a svg {
-    grid-area: 1 / 1;
-}
-
-.socials a svg[fill='#fff'] {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.socials a svg[fill='#fff']:hover {
-    opacity: 1;
 }
 
 
