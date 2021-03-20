@@ -73,6 +73,10 @@ nav img {
     margin: 10px 80px;
 }
 
+input[type='checkbox'] {
+    display: none;
+}
+
 .nav-list {
     justify-content: flex-end;
     align-items: center;
@@ -237,15 +241,31 @@ footer .socials a {
         background: transparent;
         padding: 0;
         margin-right: 10px;
+        z-index: 1;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
     }
     button.hamburger,
     button.hambuger:active {
         border: none;
     }
+    .fas:hover {
+        color: var(--accent-hover);
+    }
+    input[type="checkbox"] {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
     .nav-list {
         display: none;
     }
-    .nav-list.show {
+    input[type='checkbox']:checked~.nav-list {
         display: block;
         order: 3;
         width: 100%;
