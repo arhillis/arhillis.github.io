@@ -237,19 +237,27 @@ footer .socials a {
 
 @media screen and (max-width: 960px) {
     button.hamburger,
+    input[type='checkbox'] {
+        --menu-width: 39px;
+        --menu-spacing: 10px;
+        --bar-height: 4px;
+        --bar-width: calc(var(--menu-width) - var(--menu-spacing));
+        --menu-spacing-neg: calc(var(--menu-spacing) * -1);
+    }
+    button.hamburger,
     button.hamburger::before,
     button.hamburger::after {
         background: var(--accent);
-        width: 40px;
-        height: 5px;
+        width: var(--bar-width);
+        height: var(--bar-height);
         transition: 0.5s;
     }
     button.hamburger {
         display: block;
         padding: 0;
         position: absolute;
-        right: 10px;
-        top: 27.5px;
+        right: var(--menu-spacing);
+        top: 18px;
         z-index: 1;
         outline: none;
     }
@@ -257,11 +265,13 @@ footer .socials a {
     button.hamburger::after {
         content: '';
         position: inherit;
-        top: -12.5px;
         right: 0;
     }
+    button.hamburger::before {
+        top: var(--menu-spacing-neg);
+    }
     button.hamburger::after {
-        top: 12.5px;
+        top: var(--menu-spacing);
     }
     button.hamburger,
     button.hambuger:active {
@@ -271,14 +281,15 @@ footer .socials a {
     input[type='checkbox']:hover~button.hamburger::before,
     input[type='checkbox']:hover~button.hamburger::after {
         background: white;
+        transform-origin: center;
     }
     input[type="checkbox"] {
         display: block;
         position: absolute;
         right: 0;
         margin: 0;
-        width: 50px;
-        height: 50px;
+        width: var(--menu-width);
+        height: var(--menu-width);
         z-index: 2;
         opacity: 0;
         cursor: pointer;
@@ -298,9 +309,9 @@ footer .socials a {
         height: 0;
     }
     input[type='checkbox']:checked~button.hamburger::after {
-        transform: rotate(135deg) translate(-12px, 10px);
+        transform: rotate(135deg) translate(-5px, 5px);
     }
     input[type='checkbox']:checked~button.hamburger::before {
-        transform: rotate(-135deg) translate(-10px, -5px);
+        transform: rotate(-135deg) translate(-10px, -10px);
     }
 }
