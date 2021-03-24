@@ -236,22 +236,44 @@ footer .socials a {
 }
 
 @media screen and (max-width: 960px) {
+    button.hamburger,
+    button.hamburger::before,
+    button.hamburger::after {
+        background: var(--accent);
+        width: 40px;
+        height: 5px;
+        transition: 0.5s;
+    }
+    button.hamburger:hover,
+    button.hamburger::before:hover,
+    button.hamburger::after:hover {
+        background: white;
+    }
     button.hamburger {
         display: block;
-        background: transparent;
         padding: 0;
-        margin-right: 10px;
+        position: absolute;
+        right: 10px;
+        top: 27.5px;
         z-index: 1;
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
+        outline: none;
+    }
+    button.hamburger::before,
+    button.hamburger::after {
+        content: '';
+        position: inherit;
+        top: -12.5px;
+        right: 0;
+    }
+    button.hamburger::after {
+        top: 12.5px;
     }
     button.hamburger,
     button.hambuger:active {
         border: none;
     }
-    .fas:hover {
-        color: var(--accent-hover);
+    input[type='checkbox']:hover~button.hamburger {
+        background: white;
     }
     input[type="checkbox"] {
         display: block;
@@ -261,16 +283,27 @@ footer .socials a {
         width: 50px;
         height: 50px;
         z-index: 2;
+        opacity: 0;
+        cursor: pointer;
     }
     .nav-list {
         display: none;
+    }
+    .nav-list li {
+        text-align: right;
     }
     input[type='checkbox']:checked~.nav-list {
         display: block;
         order: 3;
         width: 100%;
     }
-    .nav-list li {
-        text-align: right;
+    input[type='checkbox']:checked~button.hamburger {
+        height: 0;
+    }
+    input[type='checkbox']:checked~button.hamburger::after {
+        transform: rotate(135deg) translate(-12px, 10px);
+    }
+    input[type='checkbox']:checked~button.hamburger::before {
+        transform: rotate(-135deg) translate(-10px, -5px);
     }
 }
