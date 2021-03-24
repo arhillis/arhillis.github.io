@@ -244,11 +244,6 @@ footer .socials a {
         height: 5px;
         transition: 0.5s;
     }
-    button.hamburger:hover,
-    button.hamburger::before:hover,
-    button.hamburger::after:hover {
-        background: white;
-    }
     button.hamburger {
         display: block;
         padding: 0;
@@ -272,7 +267,9 @@ footer .socials a {
     button.hambuger:active {
         border: none;
     }
-    input[type='checkbox']:hover~button.hamburger {
+    input[type='checkbox']:hover~button.hamburger,
+    input[type='checkbox']:hover~button.hamburger::before,
+    input[type='checkbox']:hover~button.hamburger::after {
         background: white;
     }
     input[type="checkbox"] {
