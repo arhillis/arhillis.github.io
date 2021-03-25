@@ -60,7 +60,7 @@ button:focus {
 
 .fab:hover,
 .fas:hover {
-    color: var(--accent-hover);
+    color: white;
 }
 
 
