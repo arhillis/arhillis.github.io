@@ -215,6 +215,9 @@ header {
 .project-card p {
     font-size: 15px;
     padding: 10px;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .project-card hr {
