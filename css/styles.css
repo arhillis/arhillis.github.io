@@ -1,6 +1,6 @@
 :root {
-    --accent: coral;
-    --accent-hover: #ef744b;
+    --accent: #4D9DE0;
+    --accent-hover: #23395B;
     --x-dark: #1c1d25;
     --main-txt-color: black;
     --alt-text-color: white;
@@ -16,6 +16,7 @@ section {
 
 nav,
 header,
+button,
 .header-text button,
 .fab:hover,
 .fas:hover {
@@ -57,6 +58,11 @@ button:focus {
     transition: 0.5s;
 }
 
+.fab:hover,
+.fas:hover {
+    color: var(--accent-hover);
+}
+
 
 /* ************** NAVBAR *********************** */
 
@@ -87,13 +93,18 @@ input[type='checkbox'] {
     text-decoration: none;
     text-align: center;
     font-size: 25px;
+    text-transform: uppercase;
     padding: 20px;
+}
+
+.nav-list li a:hover {
+    color: var(--accent);
 }
 
 button {
     border: none;
     background: var(--accent);
-    color: white;
+    transition: 0.5s;
 }
 
 button:hover {
@@ -247,7 +258,8 @@ footer .socials a {
     button.hamburger,
     button.hamburger::before,
     button.hamburger::after,
-    .nav-list {
+    .nav-list,
+    .nav-list li a {
         transition: 0.5s;
     }
     button.hamburger,
@@ -311,9 +323,6 @@ footer .socials a {
         background: rgba(0, 0, 0, 0.85);
         top: -100vh;
         opacity: 0;
-    }
-    .nav-list li {
-        text-align: right;
     }
     input[type='checkbox']:checked~.nav-list {
         top: 0;
