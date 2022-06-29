@@ -84,5 +84,17 @@ section {
         justify-content: center;
         align-items: center;
         box-shadow: var(--box-shadow-1);
+        i {
+            font-size: 1rem;
+            color: var(--color-grey-2);
+            pointer-events: none;
+        }
+        &.active {
+            background: var(--color-accent);
+            transition: all 0.4s ease-in-out;
+            i {
+                color: var(--white) !important;
+            }
+        }
     }
 }

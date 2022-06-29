@@ -104,4 +104,20 @@ section {
   -webkit-box-shadow: var(--box-shadow-1);
           box-shadow: var(--box-shadow-1);
 }
+
+.controlls .control i {
+  font-size: 1rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+.controlls .control.active {
+  background: var(--color-accent);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.controlls .control.active i {
+  color: var(--white) !important;
+}
 /*# sourceMappingURL=styles.css.map */
