@@ -34,3 +34,18 @@ a {
     color: inherit;
     font-family: inherit;
 }
+
+header {
+    height: 100vh;
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 18rem;
+}
