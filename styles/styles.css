@@ -51,4 +51,19 @@ section {
   left: 0;
   padding: 3rem 18rem;
 }
+
+.section {
+  -webkit-transform: translateY(-100%) scale(0);
+          transform: translateY(-100%) scale(0);
+  background: var(--color-primary);
+}
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-4 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
 /*# sourceMappingURL=styles.css.map */
