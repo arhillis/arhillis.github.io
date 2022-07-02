@@ -5,11 +5,19 @@ const body = document.querySelector('body');
 
 const pageTransition = () =>{
     for(let i of sectionBtn){
-        i.addEventListener('click', () =>{
+        i.addEventListener('click', function(e){
+            const {id} = e.target.dataset;
+            const activeSection = document.getElementById(id);
+            
             for(let btn of sectionBtn){
                 btn.classList.remove('active');
             }
-            i.classList.add('active');
+            this.classList.add('active');
+
+            for(let section of sections){
+                section.classList.remove('active');
+            }
+            activeSection.classList.add('active');
         });
     }
 };
