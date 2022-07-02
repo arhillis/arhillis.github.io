@@ -51,15 +51,37 @@ header {
     top: 0;
     left: 0;
     padding: 3rem 18rem;
-    transform: translateY(-100%);
-    background: var(--color-primary);
     opacity: 0;
+    transform: translateY(-100vh);
+    background: var(--color-primary);
     transition: all 0.4s ease-in-out;
 }
 
 .section.active {
     opacity: 1;
     transform: translateY(0);
+    -webkit-animation: sectionTransition 0.5s ease-in-out;
+    animation: sectionTransition 0.5s ease-in-out;
+    @-webkit-keyframes sectionTransition {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes sectionTransition {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 }
 
 .sec-2 {
