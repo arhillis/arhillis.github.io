@@ -9,14 +9,10 @@ const pageTransition = () =>{
             const {id} = e.target.dataset;
             const activeSection = document.getElementById(id);
             
-            for(let btn of sectionBtn){
-                btn.classList.remove('active');
-            }
+            sectionBtn.forEach(btn =>  btn.classList.remove('active'));
             this.classList.add('active');
 
-            for(let section of sections){
-                section.classList.remove('active');
-            }
+            sections.forEach(section => section.classList.remove('active'));
             activeSection.classList.add('active');
         });
     }
