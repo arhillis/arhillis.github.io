@@ -1,6 +1,17 @@
-window.onload = function(){
-    const hamburgerBtn = document.querySelector('.hamburger');
-    const navList = document.querySelector('.nav-list');
+const sections = document.querySelectorAll('.section');
+const sectionBtns = document.querySelector('.controlls');
+const sectionBtn = document.querySelectorAll('.control');
+const body = document.querySelector('body');
 
-    hamburgerBtn.addEventListener('click', () => navList.classList.toggle('show'));
-}
+const pageTransition = () =>{
+    for(let i of sectionBtn){
+        i.addEventListener('click', () =>{
+            for(let btn of sectionBtn){
+                btn.classList.remove('active');
+            }
+            i.classList.add('active');
+        });
+    }
+};
+
+window.onload = pageTransition;
