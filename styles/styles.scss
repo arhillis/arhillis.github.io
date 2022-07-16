@@ -36,12 +36,6 @@ a {
     font-family: inherit;
 }
 
-header {
-    height: 100vh;
-    color: var(--color-white);
-    overflow: hidden;
-}
-
 // section {
 // }
 .section {
@@ -128,5 +122,12 @@ header {
                 color: var(--white) !important;
             }
         }
+    }
+}
+
+//Header content
+.header-content {
+    img {
+        width: 50px;
     }
 }
