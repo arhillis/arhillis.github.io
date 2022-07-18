@@ -173,6 +173,16 @@ header.section {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
+.header-content div.right-side .cta-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-accent);
+}
+.header-content div.right-side .cta-btn .text {
+  padding: 2rem;
+}
 .header-content .image-container {
   width: 100%;
   max-width: 450px;
