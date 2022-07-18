@@ -185,14 +185,34 @@ header.section {
                 font-weight: 600;
                 position: relative;
                 border: 1px solid var(--color-accent);
+                overflow: hidden;
                 .text {
-                    padding: 2rem;
+                    padding: 0 2rem;
                 }
                 .btn-icon {
                     @include flex-center();
                     background: var(--color-accent);
                     border-radius: 50%;
-                    padding: 1rem;
+                    padding: 0.5rem;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: var(--color-accent);
+                    transform: translateX(100%);
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+                    z-index: -1;
+                }
+                &:hover {
+                    &::before {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
                 }
             }
         }
