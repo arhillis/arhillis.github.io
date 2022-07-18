@@ -179,9 +179,20 @@ header.section {
   font-weight: 600;
   position: relative;
   border: 1px solid var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-content div.right-side .cta-btn .text {
   padding: 2rem;
+}
+.header-content div.right-side .cta-btn .btn-icon {
+  background: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
 }
 .header-content .image-container {
   width: 100%;

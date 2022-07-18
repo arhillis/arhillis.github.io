@@ -180,8 +180,19 @@ header.section {
                 font-weight: 600;
                 position: relative;
                 border: 1px solid var(--color-accent);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 .text {
                     padding: 2rem;
+                }
+                .btn-icon {
+                    background: var(--color-accent);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    padding: 1rem;
                 }
             }
         }
