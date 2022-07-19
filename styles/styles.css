@@ -76,10 +76,6 @@ a {
   }
 }
 
-.sec-2 {
-  background: slateblue;
-}
-
 .sec-3 {
   background: slategray;
 }
@@ -233,6 +229,7 @@ header.section {
 }
 
 .main-title {
+  padding-top: 2.5rem;
   text-align: center;
 }
 .main-title h2 {
@@ -248,12 +245,19 @@ header.section {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: var(--color-grey-4);
+  color: var(--color-grey-5);
   transition: all 0.4 ease-in-out;
   z-index: -1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -80%);
   font-weight: 800;
   font-size: 5rem;
   letter-spacing: 0.8rem;
-  opacity: 0.5;
+  opacity: 0.2;
+}
+
+.about-body .left {
+  background: blue;
+}
+.about-body .right {
+  background: green;
 }/*# sourceMappingURL=styles.css.map */
