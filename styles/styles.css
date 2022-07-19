@@ -169,45 +169,6 @@ header.section {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
-.header-content div.right-side .cta-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  color: inherit;
-  font-weight: 600;
-  position: relative;
-  border: 1px solid var(--color-accent);
-  overflow: hidden;
-}
-.header-content div.right-side .cta-btn .text {
-  padding: 0 2rem;
-}
-.header-content div.right-side .cta-btn .btn-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-accent);
-  border-radius: 50%;
-  padding: 0.5rem;
-}
-.header-content div.right-side .cta-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--color-accent);
-  transform: translateX(100%);
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-}
-.header-content div.right-side .cta-btn:hover::before {
-  transform: translateX(0);
-  opacity: 1;
-}
 .header-content .image-container {
   width: 100%;
   max-width: 450px;
@@ -228,6 +189,7 @@ header.section {
   filter: grayscale(0);
 }
 
+/* INDEPENDANT COMPONENTS */
 .main-title {
   padding-top: 2.5rem;
   text-align: center;
@@ -253,6 +215,46 @@ header.section {
   font-size: 5rem;
   letter-spacing: 0.8rem;
   opacity: 0.2;
+}
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+}
+.cta-btn .text {
+  padding: 0 2rem;
+}
+.cta-btn .btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-accent);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.cta-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color-accent);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.cta-btn:hover::before {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .about-body .left {
