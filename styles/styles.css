@@ -359,4 +359,10 @@ header.section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.projects .project .project-info h3 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
 }/*# sourceMappingURL=styles.css.map */
