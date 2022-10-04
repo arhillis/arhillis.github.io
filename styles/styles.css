@@ -126,6 +126,7 @@ a {
   align-items: center;
   position: fixed;
   top: 15px;
+  right: 15px;
   width: var(--btn-size);
   height: var(--btn-size);
   border-radius: 50%;
@@ -527,10 +528,10 @@ header.section {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  .section {
     padding: 0;
   }
-  header .right-side {
+  .section .right-side {
     padding: 0;
   }
   .controlls {
@@ -547,5 +548,11 @@ header.section {
   }
   .controlls ul .control {
     margin: 0.5rem 0;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+  }
+  .header-content .left-side .shape {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

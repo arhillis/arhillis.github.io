@@ -131,6 +131,7 @@ a {
     @include flex-center();
     position: fixed;
     top: 15px;
+    right: 15px;
     width: var(--btn-size);
     height: var(--btn-size);
     border-radius: 50%;
