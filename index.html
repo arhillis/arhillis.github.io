@@ -2,114 +2,206 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Over the Hillis</title>
-    <link rel="stylesheet" href="css/reset.css" media="screen">
-    <link rel="stylesheet" href="css/styles.css" media="screen">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/16f49519ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto+Slab:wght@100;200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/5.15.2/css/all.min.css" />
+    <title>Over the Hillis Web Development</title>
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" name="" id="">
-        <img src="images/logo.jpg" alt="Logo" class="logo">
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li>Contact</li>
-        </ul>
-        <button class="hamburger" id="hamburger"></button>
-    </nav>
-    <header id="home">
-        <div class="header-text">
-            <h1>Over the Hillis</h1>
-            <h2>Web Development</h2>
-            <button>Learn more...</button>
-        </div>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/andrielle-r-hillis/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/arhillis">
-                <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://github.com/arhillis">
-                <i class="fab fa-github-square"></i>
-            </a>
-            <a href="https://medium.com/@arhillis">
-                <i class="fab fa-medium"></i>
-            </a>
+    <header class="section sec-1 header active" id="home">
+        <div class="header-content">
+            <div class="left-side">
+                <div class="shape">
+
+                </div>
+                <div class="image-container">
+                    <img src="./images/profilePic.jpg" alt="profile pic" srcset="">
+
+                </div>
+            </div>
+            <div class="right-side">
+                <h1 class="name">Over the <span>Hillis</span></h1>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius totam praesentium at iusto vitae maiores voluptates asperiores facilis distinctio amet nulla quos deleniti quibusdam ipsum sed, quae quisquam delectus? Placeat.</p>
+                <div class="btn-container">
+                    <a href="" class="cta-btn">
+                        <span class="text">Learn More</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-download"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
-        <section id="about" class="section">
-            <div class="info">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam ipsa deserunt repellat possimus! Quas debitis facere quisquam eos, voluptatum tempora vitae esse, dolorem nam voluptate quod, vero maxime at?</p>
-            </div>
-            <div class="headshot">
-                <img src="images/profilePic.jpg" alt="Profile pic" />
+        <section class="section sec-2 about" id="about">
+            <header class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my <br> stats</span></h2>
+            </header>
+            <div class="about-body">
+                <div class="left">
+                    <h3>More Information</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque illo reiciendis! Ratione, omnis! Excepturi soluta earum quod explicabo ex sint, itaque deleniti amet doloribus dolore laboriosam eos reprehenderit. Adipisci!</p>
+                    <div class="btn-container">
+                        <a href="" class="cta-btn">
+                            <span class="text">Learn More</span>
+                            <span class="btn-icon">
+                        <i class="fas fa-download"></i>
+                    </span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large">
+                                560+
+                            </p>
+                            <p class="small">
+                                projects completed
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="project-card-container">
-                <div class="project-card">
-                    <img src="images/projects/trillium.png" class="project-img" alt="Project One image" />
-                    <h3>Trilluim Landing</h3>
-                    <p>This is a website I built for a client using SquareSpace</p>
-                    <hr>
-                    <button class="button"><a href="https://trilliumlanding.com">View more...</a></button>
+        <section class="section sec-3 portfolio" id="portfolio">
+            <header class="main-title">
+                <h2>Projects<span class="bg-text">my <br> work</span></h2>
+            </header>
+            <div class="projects">
+                <div class="project">
+                    <img src="./images/projects/trillium.png" alt="">
+                    <div class="project-info">
+                        <h3>Trillium Landing</h3>
+                        <p>This is a website I built for a client using SquareSpace</p>
+                        <a href="https://www.trilliumlanding.com/#">View more</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="images/projects/pink-grapefruit.png" class="project-img" alt="Project One image" />
-                    <h3>Pink Grapefruit</h3>
-                    <p>I built this website from scratch using a design off of Figma and hosted it on GitHub Pages</p>
-                    <hr>
-                    <button class="button"><a href="https://arhillis.github.io/pink-grapefruit-figma/">View more...</a></button>
+                <div class="project">
+                    <img src="./images/projects/pink-grapefruit.png" alt="">
+                    <div class="project-info">
+                        <h3>Pink Grapefruit</h3>
+                        <p>I built this site from a design made with Figma and hosted it on GitHub Pages</p>
+                        <a href="https://www.trilliumlanding.com/#">View more</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://github.com/kubowania/responsive-portfolio/blob/main/src/images/project3.png?raw=true" class="project-img" alt="Project One image" />
-                    <h3>Project Three</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ducimus?</p>
-                    <hr>
-                    <button class="button">View more...</button>
-                </div>
-                <div class="project-card">
-                    <img src="https://github.com/kubowania/responsive-portfolio/blob/main/src/images/Project4.jpg?raw=true" class="project-img" alt="Project One image" />
-                    <h3>Project Four</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ducimus?</p>
-                    <hr>
-                    <button class="button">View more...</button>
+                <div class="project">
+                    <img src="./images/projects/trillium.png" alt="">
+                    <div class="project-info">
+                        <h3>Trillium Landing</h3>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section class="section sec-4 contact" id="contact">
+            <header class="main-title">
+                <h2>Contact <span>me</span><span class="bg-text">my <br> info</span></h2>
+            </header>
+            <article class="body">
+                <div class="info">
+                    <p>Contact me and let me know how I can help you with your website</p>
+                    <p>
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i> Location: </span><br> Texas, USA
+                    </p>
+                    <p>
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i> Mobile Number: </span><br> 903-219-2127
+                    </p>
+                    <p>
+                        <span class="icon"><i class="fas fa-envelope"></i> Email: </span><br> andriellerhillis@gmail.com
+                    </p>
+                    <p>
+                        <span class="icon"><i class="fas fa-graduation-cap"></i> Education: </span><br> University of North Texas, &emsp; Denton, Texas, USA
+                    </p>
+                    <p>
+                        <span class="icon"><i class="fas fa-globe-americas"></i> Languages: </span><br> English, Spanish, German
+                    </p>
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fab fa-wordpress"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="" class="contact-form">
+                        <div class="input-control">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-control">
+                            <input type="email" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-control">
+                            <input type="text" name="subject" id="subject">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="input-control">
+                            <textarea name="message" id="message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="submit-btn">
+                            <a href="" class="cta-btn">
+                                <span class="text">Send message</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </article>
         </section>
     </main>
-    <footer>
-        <h2>Contact Me</h2>
-        <p>andriellerhillis@gmail.com</p>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/andrielle-r-hillis/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/arhillis">
-                <i class="fab fa-twitter-square"></i>
-            </a>
-            <a href="https://github.com/arhillis">
-                <i class="fab fa-github-square"></i>
-            </a>
-            <a href="https://medium.com/@arhillis">
-                <i class="fab fa-medium"></i>
-            </a>
-        </div>
-    </footer>
-    <script src="JavaScript/script.js"></script>
-
+    <nav class="controlls">
+        <ul>
+            <li class="control control-1 active" data-id="home">
+                <i class="fas fa-home"></i>
+            </li>
+            <li class="control control-2" data-id="about">
+                <i class="fas fa-user"></i>
+            </li>
+            <li class="control control-3" data-id="portfolio">
+                <i class="fas fa-briefcase"></i>
+            </li>
+            <li class="control control-4" data-id="contact">
+                <i class="fas fa-envelope-open"></i>
+            </li>
+        </ul>
+    </nav>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>
