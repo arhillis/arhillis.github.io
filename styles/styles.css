@@ -76,10 +76,6 @@ a {
   }
 }
 
-.sec-4 {
-  background: lightsteelblue;
-}
-
 .controlls {
   position: fixed;
   z-index: 10;
@@ -223,6 +219,7 @@ header.section {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
   border-radius: 30px;
   color: inherit;
   font-weight: 600;
@@ -382,7 +379,7 @@ header.section {
   background: var(--color-primary);
   padding: 0.35rem;
   border-radius: 5px;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .projects .project .project-info a:hover {
   background: var(--color-grey-5);
@@ -390,4 +387,93 @@ header.section {
 .projects .project:hover .project-info {
   opacity: 1;
   transform: scale(1);
+}
+
+.contact div {
+  width: 100%;
+  padding: 1rem;
+}
+.contact article.body {
+  display: flex;
+  margin-top: 5rem;
+}
+.contact article.body .info {
+  flex: 2;
+  font-size: 0.9rem;
+}
+.contact article.body .info .icon {
+  color: var(--color-grey-2);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  opacity: 0.8;
+}
+.contact article.body .info .social-media ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact article.body .info .social-media ul i {
+  transition: all 0.5s ease-in-out;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.contact article.body .info .social-media ul i:hover {
+  color: var(--color-accent);
+  font-size: 1rem;
+  border: 0.5px solid var(--color-accent);
+}
+.contact article.body .form {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact article.body .form .input-control {
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+}
+.contact article.body .form .input-control:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.contact article.body .form .input-control label {
+  color: var(--color-grey-2);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+.contact article.body .form .input-control input,
+.contact article.body .form .input-control textarea {
+  border-radius: 0.5rem;
+  font-weight: inherit;
+  font-size: 0.9rem;
+  font-family: inherit;
+  padding: 0.2rem 0.5rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: var(--color-grey-6);
+  color: var(--color-grey-0);
+  width: 100%;
+  resize: none;
+}
+.contact article.body .form .input-control input:active, .contact article.body .form .input-control input:focus,
+.contact article.body .form .input-control textarea:active,
+.contact article.body .form .input-control textarea:focus {
+  background: var(--color-accent);
+}
+.contact article.body .form .input-control input:focus + label, .contact article.body .form .input-control input:active + label,
+.contact article.body .form .input-control textarea:focus + label,
+.contact article.body .form .input-control textarea:active + label {
+  color: var(--color-accent);
+}
+.contact article.body .form .submit-btn {
+  padding: 0;
+}
+.contact article.body .form .submit-btn .text {
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
