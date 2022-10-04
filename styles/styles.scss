@@ -117,6 +117,34 @@ a {
     }
 }
 
+.theme-btn {
+    --btn-size: 2rem;
+    @include flex-center();
+    position: fixed;
+    top: 15px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: 50%;
+    background: var(--color-grey-4);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.4s ease-in-out;
+    i {
+        font-size: 1rem;
+        color: var(--color-grey-2);
+        pointer-events: none;
+    }
+    &:active {
+        transform: translateY(-3px);
+    }
+    &:hover {
+        background: var(--color-accent);
+        i {
+            color: var(--color-grey-0);
+        }
+    }
+}
+
 //Header content
 header.section {
     display: flex;

@@ -110,6 +110,36 @@ a {
   color: var(--white) !important;
 }
 
+.theme-btn {
+  --btn-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 15px;
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border-radius: 50%;
+  background: var(--color-grey-4);
+  cursor: pointer;
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.4s ease-in-out;
+}
+.theme-btn i {
+  font-size: 1rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+.theme-btn:active {
+  transform: translateY(-3px);
+}
+.theme-btn:hover {
+  background: var(--color-accent);
+}
+.theme-btn:hover i {
+  color: var(--color-grey-0);
+}
+
 header.section {
   display: flex;
   align-items: center;
