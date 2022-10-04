@@ -524,4 +524,28 @@ header.section {
 .contact article.body .form .submit-btn .text {
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-side {
+    padding: 0;
+  }
+  .controlls {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  .controlls ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--color-grey-5);
+  }
+  .controlls ul .control {
+    margin: 0.5rem 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
