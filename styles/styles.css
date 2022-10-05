@@ -535,60 +535,11 @@ header.section {
   text-align: center;
 }
 
-@media screen and (max-width: 576px) {
-  .controlls {
-    top: auto;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-  }
-  .controlls ul {
-    display: flex;
-    justify-content: space-evenly;
-    background: var(--color-grey-5);
-  }
-  .controlls ul .control {
-    margin: 0.5rem 0;
-  }
-  .header-content .image-container {
-    width: 50%;
-    margin: 1rem auto;
-  }
-  .header-content .left-side .shape {
-    display: none;
-  }
-  .header-content div.right-side p {
-    margin: 0.5rem 0;
-    line-height: 1.6rem;
-    font-weight: 300;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header-content .image-container {
-    width: 50%;
-    margin: 1rem auto;
-  }
-}
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .section {
-    padding: 0;
-  }
-  .section .right-side {
-    padding: 0;
+    padding: 2.5rem;
   }
   .section .body {
-    grid-template-columns: 1fr;
-  }
-  .header-content div.right-side .name {
-    font-size: 2.5rem;
-  }
-  .header-content div.right-side h2 {
-    font-size: 1.25rem;
-  }
-  .header-content div.right-side p {
-    margin: 0.5rem 0;
-    line-height: 1.6rem;
-    font-weight: 300;
+    grid-template-columns: 1fr 3fr;
   }
 }/*# sourceMappingURL=styles.css.map */
