@@ -64,6 +64,10 @@ a {
     transform: translateY(-100vh);
     background: var(--color-primary);
     transition: all 0.4s ease-in-out;
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .section.active {
@@ -139,6 +143,7 @@ a {
     cursor: pointer;
     box-shadow: var(--box-shadow-1);
     transition: all 0.4s ease-in-out;
+    z-index: 11;
     i {
         font-size: 1rem;
         color: var(--color-grey-2);
@@ -162,8 +167,6 @@ header.section {
 }
 
 .header-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     height: 100%;
     div {
         display: flex;

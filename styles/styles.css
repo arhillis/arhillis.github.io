@@ -57,6 +57,10 @@ a {
   background: var(--color-primary);
   transition: all 0.4s ease-in-out;
 }
+.section .body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .section.active {
   opacity: 1;
@@ -134,6 +138,7 @@ a {
   cursor: pointer;
   box-shadow: var(--box-shadow-1);
   transition: all 0.4s ease-in-out;
+  z-index: 11;
 }
 .theme-btn i {
   font-size: 1rem;
@@ -156,8 +161,6 @@ header.section {
 }
 
 .header-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   height: 100%;
 }
 .header-content div {
@@ -527,7 +530,7 @@ header.section {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .section {
     padding: 0;
   }
@@ -549,10 +552,18 @@ header.section {
   .controlls ul .control {
     margin: 0.5rem 0;
   }
-  .header-content {
+}
+@media screen and (max-width: 992px) {
+  .section .body {
     grid-template-columns: 1fr;
   }
   .header-content .left-side .shape {
     display: none;
+  }
+  .header-content div.right-side .name {
+    font-size: 2.5rem;
+  }
+  .header-content div.right-side h2 {
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=styles.css.map */

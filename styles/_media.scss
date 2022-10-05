@@ -1,5 +1,9 @@
-@media screen and (max-width: 600px) {
-    header {
+//     --sm-screen: 576px;
+//     --md-screen: 768px;
+//     --lg-screen: 992px;
+//     --xl-screen: 1200px;
+@media screen and (max-width: 576px) {
+    .section {
         padding: 0;
         .right-side {
             padding: 0;
@@ -17,6 +21,27 @@
             background: var(--color-grey-5);
             .control {
                 margin: 0.5rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section .body {
+        grid-template-columns: 1fr;
+    }
+    .header-content {
+        .left-side {
+            .shape {
+                display: none;
+            }
+        }
+        div.right-side {
+            .name {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.25rem;
             }
         }
     }
