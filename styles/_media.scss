@@ -7,6 +7,13 @@
         padding: 2.5rem;
         .body {
             grid-template-columns: 1fr 3fr;
+            &.about-body {
+                grid-template-columns: 2fr 1fr;
+                padding: 4rem 2rem;
+            }
+        }
+        .projects {
+            padding: 1rem;
         }
     }
 }
