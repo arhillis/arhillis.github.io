@@ -3,6 +3,7 @@
     --color-black: #000;
     --color-dark: #191d2b;
     --color-accent: #27ae60;
+    --color-accent-light: #e9f7ef;
     --color-grey-0: #f5f5f5;
     --color-grey-1: #eee;
     --color-grey-2: #bdbdbd;
@@ -21,6 +22,10 @@
     --color-primary: #fff;
     --color-text: var(--color-dark);
     --color-text-grey: var(--color-grey-5);
+}
+
+.light-mode .header-content .left-side .shape {
+    background: var(--color-accent-light);
 }
 
 @mixin flex-center {

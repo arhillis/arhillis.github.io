@@ -3,6 +3,7 @@
   --color-black: #000;
   --color-dark: #191d2b;
   --color-accent: #27ae60;
+  --color-accent-light: #e9f7ef;
   --color-grey-0: #f5f5f5;
   --color-grey-1: #eee;
   --color-grey-2: #bdbdbd;
@@ -21,6 +22,10 @@
   --color-primary: #fff;
   --color-text: var(--color-dark);
   --color-text-grey: var(--color-grey-5);
+}
+
+.light-mode .header-content .left-side .shape {
+  background: var(--color-accent-light);
 }
 
 * {
@@ -531,12 +536,6 @@ header.section {
 }
 
 @media screen and (max-width: 576px) {
-  .section {
-    padding: 0;
-  }
-  .section .right-side {
-    padding: 0;
-  }
   .controlls {
     top: auto;
     right: 0;
@@ -556,23 +555,40 @@ header.section {
     width: 50%;
     margin: 1rem auto;
   }
+  .header-content .left-side .shape {
+    display: none;
+  }
   .header-content div.right-side p {
     margin: 0.5rem 0;
     line-height: 1.6rem;
     font-weight: 300;
   }
 }
+@media screen and (max-width: 768px) {
+  .header-content .image-container {
+    width: 50%;
+    margin: 1rem auto;
+  }
+}
 @media screen and (max-width: 992px) {
+  .section {
+    padding: 0;
+  }
+  .section .right-side {
+    padding: 0;
+  }
   .section .body {
     grid-template-columns: 1fr;
-  }
-  .header-content .left-side .shape {
-    display: none;
   }
   .header-content div.right-side .name {
     font-size: 2.5rem;
   }
   .header-content div.right-side h2 {
     font-size: 1.25rem;
+  }
+  .header-content div.right-side p {
+    margin: 0.5rem 0;
+    line-height: 1.6rem;
+    font-weight: 300;
   }
 }/*# sourceMappingURL=styles.css.map */
