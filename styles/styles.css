@@ -552,6 +552,15 @@ header.section {
   .controlls ul .control {
     margin: 0.5rem 0;
   }
+  .header-content .image-container {
+    width: 50%;
+    margin: 1rem auto;
+  }
+  .header-content div.right-side p {
+    margin: 0.5rem 0;
+    line-height: 1.6rem;
+    font-weight: 300;
+  }
 }
 @media screen and (max-width: 992px) {
   .section .body {
