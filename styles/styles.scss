@@ -355,11 +355,11 @@ header.section {
 .about-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding: 5rem 0;
     grid-gap: 0.5rem;
+    max-width: 990px;
+    margin: 0 auto;
     .left {
-        padding-right: 5rem;
         h3 {
             font-size: 1.5rem;
             text-transform: uppercase;
@@ -383,6 +383,9 @@ header.section {
             transition: all 0.4s ease-in-out;
             box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
             grid-column-start: 2;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
             &:hover {
                 cursor: default;
                 transform: translateY(-3px);
@@ -425,8 +428,7 @@ header.section {
     height: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    -moz-column-gap: 1rem;
-    column-gap: 1rem;
+    grid-gap: 1rem;
     margin-top: 3.75rem;
     .project {
         width: 100%;
@@ -466,6 +468,9 @@ header.section {
                 padding: 0.75rem 1rem;
                 font-size: 0.95rem;
                 height: 55%;
+                height: -webkit-fit-content;
+                height: -moz-fit-content;
+                height: fit-content;
             }
             a {
                 font-size: 0.8rem;
@@ -477,6 +482,7 @@ header.section {
                 transition: all 0.5s ease-in-out;
                 &:hover {
                     background: var(--color-text-grey);
+                    color: var(--color-dark);
                 }
             }
         }

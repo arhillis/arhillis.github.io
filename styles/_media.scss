@@ -13,78 +13,156 @@
             }
         }
         .projects {
-            padding: 1rem;
+            padding: 5rem;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 0;
         }
     }
 }
 
-// @media screen and (max-width: 992px) {
-//     .section {
-//         padding: 0;
-//         .right-side {
-//             padding: 0;
-//         }
-//     }
-//     .section .body {
-//         grid-template-columns: 1fr 2fr;
-//     }
-//     .header-content {
-//         div.right-side {
-//             .name {
-//                 font-size: 2.5rem;
-//             }
-//             h2 {
-//                 font-size: 1.25rem;
-//             }
-//             p {
-//                 margin: 0.5rem 0;
-//                 line-height: 1.6rem;
-//                 font-weight: 300;
-//             }
-//         }
-//     }
-// }
-// @media screen and (max-width: 768px) {
-//     .section .body {
-//         grid-template-columns: 1fr;
-//     }
-//     .header-content {
-//         .image-container {
-//             width: 50%;
-//             margin: 1rem auto;
-//         }
-//     }
-// }
-// @media screen and (max-width: 576px) {
-//     .controlls {
-//         top: auto;
-//         right: 0;
-//         bottom: 0;
-//         width: 100%;
-//         height: auto;
-//         ul {
-//             display: flex;
-//             justify-content: space-evenly;
-//             background: var(--color-grey-5);
-//             .control {
-//                 margin: 0.5rem 0;
-//             }
-//         }
-//     }
-//     .header-content {
-//         .image-container {
-//             width: 50%;
-//             margin: 1rem auto;
-//         }
-//         .left-side {
-//             .shape {
-//                 display: none;
-//             }
-//         }
-//         div.right-side p {
-//             margin: 0.5rem 0;
-//             line-height: 1.6rem;
-//             font-weight: 300;
-//         }
-//     }
-// }
+@media screen and (max-width: 992px) {
+    .cta-btn .text {
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+    .header-content {
+        div.right-side {
+            .name {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            .cta-btn .text {
+                padding: 0 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+    .about-body {
+        .left {
+            padding-right: 0;
+            h3 {
+                font-size: 1.25rem;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+            }
+        }
+        .right {
+            grid-gap: 0;
+        }
+    }
+    .section .projects {
+        grid-gap: 0.5rem;
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .projects .project .project-info {
+        h3 {
+            font-size: 1.1rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .section .projects {
+        padding: 4rem 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 1rem;
+    }
+    .section .projects {
+        display: block;
+        padding: 4rem 2.5rem;
+        .project {
+            margin-bottom: 1rem;
+            h3 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+            }
+            a {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section .projects .project p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 647px) {
+    .section .projects .project {
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.8rem;
+            line-height: 0.9rem;
+        }
+        a {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 576px) {
+    .section {
+        padding: 0;
+    }
+    .controlls {
+        top: auto;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            background: var(--color-grey-5);
+            .control {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+    .header-content {
+        .image-container {
+            width: 50%;
+            margin: 1rem auto;
+        }
+        .left-side {
+            .shape {
+                display: none;
+            }
+        }
+        div.right-side p {
+            margin: 0.5rem 0;
+            line-height: 1.6rem;
+            font-weight: 300;
+        }
+    }
+    .section .project .project-info {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
