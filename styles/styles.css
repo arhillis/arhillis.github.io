@@ -656,6 +656,15 @@ header.section {
   .section .projects .project a {
     font-size: 1.25rem;
   }
+  .section.contact article.body {
+    flex-direction: column;
+  }
+  .section.contact article.body div {
+    padding: 2rem;
+  }
+  .section.contact article.body .form {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 700px) {
   .section .projects .project p {
@@ -663,6 +672,21 @@ header.section {
   }
 }
 @media screen and (max-width: 647px) {
+  .section .about-body.body {
+    grid-template-columns: 1fr;
+  }
+  .section .about-body.body div {
+    display: flex;
+    flex-direction: column;
+  }
+  .section .about-body.body div.right {
+    grid-row: 1;
+    padding: 2rem 0;
+    align-items: center;
+  }
+  .section .about-body.body div.left {
+    align-items: flex-start;
+  }
   .section .projects .project h3 {
     font-size: 1rem;
   }
@@ -677,6 +701,9 @@ header.section {
 @media screen and (max-width: 576px) {
   .section {
     padding: 0;
+  }
+  .section .body {
+    grid-template-columns: 1fr;
   }
   .controlls {
     top: auto;

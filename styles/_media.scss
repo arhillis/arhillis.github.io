@@ -83,21 +83,30 @@
 @media screen and (max-width: 768px) {
     .section {
         padding: 1rem;
-    }
-    .section .projects {
-        display: block;
-        padding: 4rem 2.5rem;
-        .project {
-            margin-bottom: 1rem;
-            h3 {
-                font-size: 1.5rem;
+        .projects {
+            display: block;
+            padding: 4rem 2.5rem;
+            .project {
+                margin-bottom: 1rem;
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                }
+                a {
+                    font-size: 1.25rem;
+                }
             }
-            p {
-                font-size: 1.25rem;
-                line-height: 1.5rem;
+        }
+        &.contact article.body {
+            flex-direction: column;
+            div {
+                padding: 2rem;
             }
-            a {
-                font-size: 1.25rem;
+            .form {
+                margin-left: 0;
             }
         }
     }
@@ -110,16 +119,33 @@
 }
 
 @media screen and (max-width: 647px) {
-    .section .projects .project {
-        h3 {
-            font-size: 1rem;
+    .section {
+        .about-body.body {
+            grid-template-columns: 1fr;
+            div {
+                display: flex;
+                flex-direction: column;
+                &.right {
+                    grid-row: 1;
+                    padding: 2rem 0;
+                    align-items: center;
+                }
+                &.left {
+                    align-items: flex-start;
+                }
+            }
         }
-        p {
-            font-size: 0.8rem;
-            line-height: 0.9rem;
-        }
-        a {
-            font-size: 0.75rem;
+        .projects .project {
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+            }
+            a {
+                font-size: 0.75rem;
+            }
         }
     }
 }
@@ -129,6 +155,9 @@
 @media screen and (max-width: 576px) {
     .section {
         padding: 0;
+        .body {
+            grid-template-columns: 1fr;
+        }
     }
     .controlls {
         top: auto;
